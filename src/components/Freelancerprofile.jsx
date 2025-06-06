@@ -1,4 +1,4 @@
-
+import '../cssfolder/Freelancerprofile.css'
 
 export default  function Freelancerprofile() {
 
