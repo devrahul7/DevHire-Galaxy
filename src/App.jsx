@@ -3,6 +3,7 @@ import Freelancerprofile from './components/Freelancerprofile.jsx'
 import Freelancerdetails from './components/Freelancerdetails.jsx'
 import Userdashboard from './components/Userdashboard.jsx'
 import Admindashboard from './components/Admindashboard.jsx';
+import Adminprojects from './components/Adminprojects.jsx';
 
 
 
@@ -28,7 +29,11 @@ export default function App(){
             <Route path='/admindashboard' element={<Admindashboard/>}></Route>
         </Routes>
 
-        
+        <Routes>
+            <Route path='/adminprojects' element={<Adminprojects/>}></Route>
+        </Routes>
+
+
     </Router>
     </>
     );

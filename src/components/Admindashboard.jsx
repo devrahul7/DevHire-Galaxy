@@ -8,7 +8,7 @@
     <div class="header">
         <div class="logo">
             <div class="logo-icon">K</div>
-            <span>KofeJob</span>
+            <span>Dev Shukra</span>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Start typing your Search.."/>
@@ -29,15 +29,15 @@
         <div class="sidebar">
             <div class="sidebar-section">
                 <div class="sidebar-title">Main</div>
-                <a href="#" class="sidebar-item active">
+                <a href="/admindashboard" class="sidebar-item active">
                     <i>📊</i>
                     <span>Dashboard</span>
                 </a>
-                <a href="#" class="sidebar-item">
+                <a href="/adminprojects" class="sidebar-item">
                     <i>📁</i>
-                    <span>Projects</span>
+                    <span> Projects</span>
                 </a>
-                <a href="#" class="sidebar-item">
+                <a href="/" class="sidebar-item">
                     <i>👤</i>
                     <span>Freelancer</span>
                 </a>
@@ -211,35 +211,7 @@
             </div>
         </div>
     </div>
-{/* 
-    <script>
-        // Simple interactivity
-        document.querySelectorAll('.sidebar-item').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelectorAll('.sidebar-item').forEach(i => i.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
 
-        document.querySelectorAll('.review-tab').forEach(tab => {
-            tab.addEventListener('click', function() {
-                document.querySelectorAll('.review-tab').forEach(t => t.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
-
-        // Card hover effects
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.05)';
-            });
-        });
-    </script> */}
 </div>
 
         </>);
