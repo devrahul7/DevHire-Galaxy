@@ -159,7 +159,7 @@ export default function Adminfreelancer(){
                 <tr>
                     <td><input type="checkbox" class="checkbox"/></td>
                     <td>
-                        <div class="freelancer-info">
+                        <div class="freelancer-info"> 
                     <img id='img1' src={timothyImage} alt="timothy Picture"  />            
                             <div class="freelancer-details">
                                 <h4>Mr Timothy</h4>

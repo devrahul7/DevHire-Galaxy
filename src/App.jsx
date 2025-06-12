@@ -37,6 +37,10 @@ export default function App(){
         <Routes>
             <Route path='/adminfreelancer' element={<Adminfreelancer/>}></Route>
         </Routes>
+        
+        <Routes>
+            <Route path='/admindeposit' element={<Adminfreelancer/>}></Route>
+        </Routes>
 
 
     </Router>
