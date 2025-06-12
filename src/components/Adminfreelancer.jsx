@@ -75,7 +75,7 @@ export default function Adminfreelancer(){
                     <td><input type="checkbox" class="checkbox"/></td>
                     <td>
                         <div class="freelancer-info">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="Janet Paden" class="avatar"/>
+                            <img id='img1' src={janetImage} alt="janet Picture"  />
                             <div class="freelancer-details">
                                 <h4>Janet Paden</h4>
                                 <p>georgewells@example.com</p>
@@ -96,8 +96,8 @@ export default function Adminfreelancer(){
                     <td><input type="checkbox" class="checkbox"/></td>
                     <td>
                         <div class="freelancer-info">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Floyd Lewis" class="avatar"/>
-                            <div class="freelancer-details">
+                             <img id='img1' src={floydImage} alt="floyd Picture"  />
+                                <div class="freelancer-details">
                                 <h4>Floyd Lewis</h4>
                                 <p>floydlewis@example.com</p>
                             </div>
@@ -139,10 +139,10 @@ export default function Adminfreelancer(){
                     <td><input type="checkbox" class="checkbox"/></td>
                     <td>
                         <div class="freelancer-info">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="Janet Paden" class="avatar"/>
-                            <div class="freelancer-details">
-                                <h4>Janet Paden</h4>
-                                <p>georgewells@example.com</p>
+                           <img id='img1' src={jamesImage} alt="james Picture"  />
+                                <div class="freelancer-details">
+                                <h4>Mr james</h4>
+                                <p>james@example.com</p>
                             </div>
                         </div>
                     </td>
@@ -160,10 +160,10 @@ export default function Adminfreelancer(){
                     <td><input type="checkbox" class="checkbox"/></td>
                     <td>
                         <div class="freelancer-info">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" alt="Floyd Lewis" class="avatar"/>
+                    <img id='img1' src={timothyImage} alt="timothy Picture"  />            
                             <div class="freelancer-details">
-                                <h4>Floyd Lewis</h4>
-                                <p>floydlewis@example.com</p>
+                                <h4>Mr Timothy</h4>
+                                <p>Mr timothy@example.com</p>
                             </div>
                         </div>
                     </td>
@@ -181,10 +181,10 @@ export default function Adminfreelancer(){
                     <td><input type="checkbox" class="checkbox"/></td>
                     <td>
                         <div class="freelancer-info">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=40&h=40&fit=crop&crop=face" alt="Andrew Glover" class="avatar"/>
+                       <img id='img1' src={georgeImage} alt="george Picture"  />    
                             <div class="freelancer-details">
-                                <h4>Andrew Glover</h4>
-                                <p>Andrewglover@example.com</p>
+                                <h4>George image</h4>
+                                <p>george3212@example.com</p>
                             </div>
                         </div>
                     </td>
