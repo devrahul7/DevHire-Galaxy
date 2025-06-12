@@ -40,6 +40,7 @@
 
         /* Header Section */
         .header {
+            margin-top: 53px;
             display: flex;
             align-items: center;
             gap: 20px;

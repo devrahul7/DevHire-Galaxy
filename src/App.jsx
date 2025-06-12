@@ -5,6 +5,7 @@ import Userdashboard from './components/Userdashboard.jsx'
 import Admindashboard from './components/Admindashboard.jsx';
 import Adminprojects from './components/Adminprojects.jsx';
 import Adminfreelancer from './components/Adminfreelancer.jsx';
+import Admindeposit from './components/Admindeposit.jsx';
 
 
 
@@ -39,7 +40,7 @@ export default function App(){
         </Routes>
         
         <Routes>
-            <Route path='/admindeposit' element={<Adminfreelancer/>}></Route>
+            <Route path='/admindeposit' element={<Admindeposit/>}></Route>
         </Routes>
 
 
