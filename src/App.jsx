@@ -1,12 +1,13 @@
 import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
-import Freelancerprofile from './components/Freelancerprofile.jsx'
-import Freelancerdetails from './components/Freelancerdetails.jsx'
-import Userdashboard from './components/Userdashboard.jsx'
-import Admindashboard from './components/Admindashboard.jsx';
-import Adminprojects from './components/Adminprojects.jsx';
-import Adminfreelancer from './components/Adminfreelancer.jsx';
-import Admindeposit from './components/Admindeposit.jsx';
-import Adminwithdraw from './components/Adminwithdraw.jsx';
+import Freelancerprofile from './pages/Freelancerprofile.jsx'
+import Freelancerdetails from './pages/Freelancerdetails.jsx'
+import Userdashboard from './pages/Userdashboard.jsx'
+import Admindashboard from './pages/Admindashboard.jsx';
+import Adminprojects from './pages/Adminprojects.jsx';
+import Adminfreelancer from './pages/Adminfreelancer.jsx';
+import Admindeposit from './pages/Admindeposit.jsx';
+import Adminwithdraw from './pages/Adminwithdraw.jsx';
+import Adminroles from './pages/Adminroles.jsx';
 
 
 
@@ -44,7 +45,7 @@ export default function App(){
         <Routes>
             <Route path='/adminwithdraw' element={<Adminwithdraw/>}></Route>
         </Routes>
-        
+
 
     
 
