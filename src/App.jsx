@@ -6,9 +6,7 @@ import Admindashboard from './components/Admindashboard.jsx';
 import Adminprojects from './components/Adminprojects.jsx';
 import Adminfreelancer from './components/Adminfreelancer.jsx';
 import Admindeposit from './components/Admindeposit.jsx';
-
-
-
+import Adminwithdraw from './components/Adminwithdraw.jsx';
 
 
 
@@ -42,7 +40,13 @@ export default function App(){
         <Routes>
             <Route path='/admindeposit' element={<Admindeposit/>}></Route>
         </Routes>
+        
+        <Routes>
+            <Route path='/adminwithdraw' element={<Adminwithdraw/>}></Route>
+        </Routes>
+        
 
+    
 
     </Router>
     </>

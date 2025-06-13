@@ -8,7 +8,7 @@ export default  function Freelancerprofile() {
 <div>
     <div className="container">
         <div className="main-content">
-            {/* <!-- Header --> */}
+            {/*  Header  */}
             <div className="header">
                 <div className="avatar">MS</div>
                 <div className="header-info">
@@ -31,7 +31,7 @@ export default  function Freelancerprofile() {
                 </div>
             </div>
 
-            {/* <!-- Stats --> */}
+            {/*  Stats  */}
             <div className="stats">
                 <div className="stat-group">
                     <div className="stat-item recommended">
@@ -83,14 +83,14 @@ export default  function Freelancerprofile() {
                 </div>
             </div>
 
-            {/* <!-- Description --> */}
+            {/*  Description  */}
             <div className="description">
                 <h2 className="section-title">Description</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
             </div>
 
-            {/* <!-- Experience --> */}
+            {/*  Experience  */}
             <div className="experience">
                 <h2 className="section-title">Experience</h2>
                 <div className="experience-item">
@@ -121,7 +121,7 @@ export default  function Freelancerprofile() {
         </div>
 
         <div className="sidebar">
-            {/* <!-- Budget Card --> */}
+            {/*  Budget Card  */}
             <div className="sidebar-card">
                 <div className="budget-header">
                     <div className="budget-title">Budget</div>
@@ -157,7 +157,7 @@ export default  function Freelancerprofile() {
                 <button className="send-invite">Send Invite</button>
             </div>
 
-            {/* <!-- Skills Card --> */}
+            {/*  Skills Card  */}
             <div className="sidebar-card">
                 <h3 className="section-title">Skills</h3>
                 <div className="skills-grid">
@@ -173,7 +173,7 @@ export default  function Freelancerprofile() {
                 </div>
             </div>
 
-            {/* <!-- Location Card --> */}
+            {/*  Location Card  */}
             <div className="sidebar-card">
                 <h3 className="section-title">Location</h3>
                 <div className="map-container">
