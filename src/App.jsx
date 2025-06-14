@@ -45,6 +45,10 @@ export default function App(){
         <Routes>
             <Route path='/adminwithdraw' element={<Adminwithdraw/>}></Route>
         </Routes>
+        
+        <Routes>
+            <Route path='/adminroles' element={<Adminroles/>}></Route>
+        </Routes>
 
 
     
