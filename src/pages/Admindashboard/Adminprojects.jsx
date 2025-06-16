@@ -1,4 +1,5 @@
 
+import Sidebar from '../../components/Sidebar';
 import '../../cssfolder/Admindashboardcss/Adminprojects.css';
 
 export default function Adminprojects(){
@@ -30,47 +31,7 @@ export default function Adminprojects(){
 
     <div class="container">
          {/* Sidebar  */}
-        <div class="sidebar">
-            <div class="sidebar-section">
-                <div class="sidebar-title">Main</div>
-                <a href="/admindashboard" class="sidebar-item">
-                    <i>📊</i>
-                    <span>Dashboard</span>
-                </a>
-                <a href="/adminprojects" class="sidebar-item active">
-                    <i>📁</i>
-                    <span>Projects</span>
-                </a>
-                <a href="/" class="sidebar-item">
-                    <i>👤</i>
-                    <span>Freelancer</span>
-                </a>
-                <a href="#" class="sidebar-item">
-                    <i>💰</i>
-                    <span>Deposit</span>
-                </a>
-                <a href="#" class="sidebar-item">
-                    <i>💸</i>
-                    <span>Withdrawn</span>
-                </a>
-                <a href="#" class="sidebar-item">
-                    <i>📝</i>
-                    <span>Transaction</span>
-                </a>
-                <a href="#" class="sidebar-item">
-                    <i>📊</i>
-                    <span>Reports</span>
-                </a>
-                <a href="#" class="sidebar-item">
-                    <i>👥</i>
-                    <span>Roles</span>
-                </a>
-                <a href="#" class="sidebar-item">
-                    <i>⚙️</i>
-                    <span>Settings</span>
-                </a>
-            </div>
-        </div>
+       <Sidebar/>
 
          {/* Main Content  */}
         <div class="main-content">

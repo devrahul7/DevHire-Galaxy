@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     box-sizing: border-box;
 }
@@ -334,7 +334,7 @@ body {
 }
 
 .invite-btn {
-    background: #ff6b35;
+    background: #ff6b35 !important;
     color: white;
     border: none;
 }
