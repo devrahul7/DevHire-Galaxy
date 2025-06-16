@@ -1,12 +1,12 @@
-import '../cssfolder/Adminwithdraw.css';
+import '../../cssfolder/Admindashboardcss/Adminwithdraw.css';
 
 
-import georgeImage from '../assets/george.jpg';
-import sitaImage from '../assets/sita.jpg';
-import timothyImage from '../assets/timothy.jpeg';
-import janetImage from '../assets/janet.avif';
-import jamesImage from '../assets/james.avif';
-import floydImage from '../assets/floyd.avif';
+import georgeImage from '../.././assets/george.jpg';
+import sitaImage from '../.././assets/sita.jpg';
+import timothyImage from '../.././assets/timothy.jpeg';
+import janetImage from '../.././assets/janet.avif';
+import jamesImage from '../.././assets/james.avif';
+import floydImage from '../.././assets/floyd.avif';
 
 export default function Adminwithdraw(){
     return (<>

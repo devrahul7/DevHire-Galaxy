@@ -1,5 +1,5 @@
 
-  import '../cssfolder/Admindashboard.css';
+import '../../cssfolder/Admindashboardcss/Admindashboard.css';
 
     export default function Admindashboard() {
 

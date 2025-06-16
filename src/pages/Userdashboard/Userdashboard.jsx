@@ -18,7 +18,7 @@ import {
   LogOut
 } from 'lucide-react';
 
-const Dashboard = () => {
+const Userdashboard = () => {
   const overviewData = [
     { month: 'Jan', value: 100 },
     { month: 'Feb', value: 150 },
@@ -594,4 +594,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Userdashboard;

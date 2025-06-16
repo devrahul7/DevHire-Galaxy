@@ -1,5 +1,5 @@
 
-import '../cssfolder/Adminprojects.css';
+import '../../cssfolder/Admindashboardcss/Adminprojects.css';
 
 export default function Adminprojects(){
     return (<>

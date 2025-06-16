@@ -1,4 +1,6 @@
-import '../cssfolder/Freelancerprofile.css'
+// import '../.././cssfolder/Freelancerprofile.css'
+import '../../cssfolder/Freelancercss/Freelancerprofile.css';
+
 
 export default  function Freelancerprofile() {
 

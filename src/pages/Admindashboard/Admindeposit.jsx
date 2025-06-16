@@ -1,13 +1,12 @@
 
-import '../cssfolder/Admindeposit.css'
+import '../../cssfolder/Admindashboardcss/Admindeposit.css';
 
-
-import georgeImage from '../assets/george.jpg';
-import sitaImage from '../assets/sita.jpg';
-import timothyImage from '../assets/timothy.jpeg';
-import janetImage from '../assets/janet.avif';
-import jamesImage from '../assets/james.avif';
-import floydImage from '../assets/floyd.avif';
+import georgeImage from '../.././assets/george.jpg';
+import sitaImage from '../.././assets/sita.jpg';
+import timothyImage from '../.././assets/timothy.jpeg';
+import janetImage from '../.././assets/janet.avif';
+import jamesImage from '../.././assets/james.avif';
+import floydImage from '../.././assets/floyd.avif';
 
 export default function Admindeposit(){
     return (<>

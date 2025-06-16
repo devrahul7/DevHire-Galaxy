@@ -1,4 +1,4 @@
-import '../cssfolder/Adminroles.css';
+import '../../cssfolder/Admindashboardcss/Adminroles.css';
 
 import React, { useState, useMemo } from 'react';
 import { Plus, ChevronDown, Eye, Edit, Trash2, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from 'lucide-react';
