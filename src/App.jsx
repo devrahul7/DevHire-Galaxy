@@ -7,8 +7,6 @@ import Adminprojects from './pages/Adminprojects.jsx';
 import Adminfreelancer from './pages/Adminfreelancer.jsx';
 import Admindeposit from './pages/Admindeposit.jsx';
 import Adminwithdraw from './pages/Adminwithdraw.jsx';
-import Adminroles from './pages/Adminroles.jsx';
-
 
 
 export default function App(){
