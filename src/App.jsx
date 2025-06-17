@@ -1,6 +1,6 @@
 import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
-import Freelancerprofile from './pages/Freelancer/Freelancerprofile.jsx';
-import Freelancerdetails from './pages/Freelancer/Freelancerdetails.jsx';
+import Freelancerprofile from './pages/Admindashboard/Freelancerprofile.jsx';
+import Freelancerdetails from './pages/Admindashboard/Freelancerdetails.jsx';
 import Userdashboard from './pages/Userdashboard/Userdashboard.jsx';
 import Admindashboard from './pages/Admindashboard/Admindashboard.jsx';
 import Adminprojects from './pages/Admindashboard/Adminprojects.jsx';
@@ -9,6 +9,7 @@ import Admindeposit from './pages/Admindashboard/Admindeposit.jsx';
 import Adminwithdraw from './pages/Admindashboard/Adminwithdraw.jsx';
 import Adminroles from './pages/Admindashboard/Adminroles.jsx';
 import Admintransaction from './pages/Admindashboard/Admintransaction.jsx';
+import Adminreports from './pages/Admindashboard/Adminreports.jsx';
 
 
 
@@ -37,6 +38,8 @@ export default function App(){
             <Route path='/adminroles' element={<Adminroles/>}></Route>
 
             <Route path='/admintransaction' element={ <Admintransaction/> }></Route>
+
+            <Route path='/adminreports' element={ <Adminreports/> }></Route>
 
 
         </Routes>

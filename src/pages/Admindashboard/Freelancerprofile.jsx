@@ -1,5 +1,5 @@
 // import '../.././cssfolder/Freelancerprofile.css'
-import '../../cssfolder/Freelancercss/Freelancerprofile.css';
+import '../../cssfolder/Admindashboardcss/Freelancerprofile.css';
 
 
 export default  function Freelancerprofile() {

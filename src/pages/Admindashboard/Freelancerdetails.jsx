@@ -1,5 +1,4 @@
-// import '../.././cssfolder/Freelancerdetails.css';
-import '../../cssfolder/Freelancercss/Freelancerdetails.css';
+import '../../cssfolder/Admindashboardcss/Freelancerdetails.css';
 
 import georgeImage from '../.././assets/george.jpg';
 import sitaImage from '../.././assets/sita.jpg';
