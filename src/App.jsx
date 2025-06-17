@@ -16,42 +16,25 @@ export default function App(){
     <Router>
         <Routes>
             <Route path='/' element={<Freelancerdetails/>}></Route>
-        </Routes>
-
-        <Routes>
+       
             <Route path='/freelancerprofile' element={<Freelancerprofile/>}></Route>
-        </Routes>
-
-        <Routes>
+    
+        
             <Route path='/userdashboard' element={<Userdashboard/>}></Route>
-        </Routes>
-
-        <Routes>
+     
+       
             <Route path='/admindashboard' element={<Admindashboard/>}></Route>
-        </Routes>
 
-        <Routes>
             <Route path='/adminprojects' element={<Adminprojects/>}></Route>
-        </Routes>
-
-        <Routes>
+       
             <Route path='/adminfreelancer' element={<Adminfreelancer/>}></Route>
-        </Routes>
-        
-        <Routes>
+      
             <Route path='/admindeposit' element={<Admindeposit/>}></Route>
-        </Routes>
         
-        <Routes>
             <Route path='/adminwithdraw' element={<Adminwithdraw/>}></Route>
-        </Routes>
-        
-        <Routes>
+    
             <Route path='/adminroles' element={<Adminroles/>}></Route>
         </Routes>
-
-
-    
 
     </Router>
     </>
