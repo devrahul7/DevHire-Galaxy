@@ -8,6 +8,7 @@ import Adminfreelancer from './pages/Admindashboard/Adminfreelancer.jsx';
 import Admindeposit from './pages/Admindashboard/Admindeposit.jsx';
 import Adminwithdraw from './pages/Admindashboard/Adminwithdraw.jsx';
 import Adminroles from './pages/Admindashboard/Adminroles.jsx';
+import Admintransaction from './pages/Admindashboard/Admintransaction.jsx';
 
 
 
@@ -34,6 +35,10 @@ export default function App(){
             <Route path='/adminwithdraw' element={<Adminwithdraw/>}></Route>
     
             <Route path='/adminroles' element={<Adminroles/>}></Route>
+
+            <Route path='/admintransaction' element={ <Admintransaction/> }></Route>
+
+
         </Routes>
 
     </Router>
