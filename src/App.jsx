@@ -2,6 +2,7 @@
 
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import PostJob from "./pages/PostJob";
 function App() {
 
   return (
@@ -9,6 +10,7 @@ function App() {
      
       <Register/>
       <Login/>
+      <PostJob/>
 
 
 

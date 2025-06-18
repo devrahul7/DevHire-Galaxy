@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImage from '../assets/logo.png';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -181,7 +182,7 @@ const Login = () => {
       <div style={styles.loginCard}>
         <div style={styles.loginHeader}>
           <div style={styles.logo}>
-            <span style={styles.logoIcon}>🔥</span>
+            <img src={logoImage} alt="sita Picture" />
             <span style={styles.logoText}>Dev Shukra</span>
           </div>
           <p style={styles.welcomeText}>Welcome! Nice to see you again</p>
