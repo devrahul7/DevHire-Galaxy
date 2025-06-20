@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-.container {
+.containerhiredeveloper {
     display: flex;
     max-width: 2100px;
     margin: 0 auto;
@@ -26,6 +26,7 @@ body {
     padding: 20px;
     height: fit-content;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 12% !important;
 }
 
 .sidebar h3 {
@@ -102,9 +103,9 @@ body {
 }
 
 /* Main Content Styles */
-.main-content {
+.main-contenthiredeveloper {
     flex: 1;
-     margin-left: 220px !important;
+     margin-left: 40px !important;
 }
 
 .content-header {
@@ -362,7 +363,7 @@ body {
 }
 
 @media (max-width: 900px) {
-    .container {
+    .containerhiredeveloper {
         flex-direction: column;
     }
     

@@ -9,12 +9,14 @@ import timothyImage from '../.././assets/timothy.jpeg';
 import janetImage from '../.././assets/janet.avif';
 import jamesImage from '../.././assets/james.avif';
 import floydImage from '../.././assets/floyd.avif';
+import Usersidebar from '../../components/Usersidebar';
 
 
 export default function Userhiredev(){
     const navigate = useNavigate(); 
     return   <>
-    <div className="container">
+    <Usersidebar/>
+    <div className="containerhiredeveloper">
         {/*  Sidebar Filters */}
         <div className="sidebar">
             <h3>Search Filter</h3>
@@ -85,7 +87,7 @@ export default function Userhiredev(){
         </div>
 
         {/*  Main Content */}
-        <div className="main-content">
+        <div className="main-contenthiredeveloper">
             {/*  Header */}
             <div className="content-header">
                 <span className="results-count">Found 9 Results</span>

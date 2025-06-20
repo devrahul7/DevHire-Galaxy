@@ -1,23 +1,25 @@
-
 import { useNavigate } from 'react-router-dom'; 
-import '../cssfolder/usersidebar.css';
+import '../cssfolder/Usersidebar.css'; // Renamed CSS file
 
 
 export default function Usersidebar(){
-     const navigate = useNavigate(); 
-    return (<>
-     <div class="sidebar">
-            <div class="sidebar-section">
-                <div class="sidebar-title">Main</div>
-                
-                <a  class="sidebar-item active" onClick={() => navigate('/userdashboard')} > 📊 Dashboard</a>
-                <a  class="sidebar-item " onClick={() => navigate('/userprojects')} > 📁 Projects</a>
-                <a  class="sidebar-item " onClick={() => navigate('/userreview')} > 💰 Reviews </a>
-                <a  class="sidebar-item " onClick={() => navigate('/userpayment')} > 📊 payments</a>
-                <a  class="sidebar-item " onClick={() => navigate('/usersetting')} > ⚙️ Settings</a>
-                <a  class="sidebar-item " onClick={() => navigate('/userlogout')} > 👥 logout</a>
+    const navigate = useNavigate(); 
+    return (
+        <>
+            <div className="user-sidebar-container"> {/* Renamed class */}
+                <div className="user-sidebar-section"> {/* Renamed class */}
+                    <div className="user-sidebar-title">Main</div> {/* Renamed class */}
+                    
+                    <a className="user-sidebar-item active" onClick={() => navigate('/userdashboard')} > 📊 Dashboard</a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/userprojects')} > 📁 Projects</a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/userpostjob')} >  🗐 PostJob</a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/userhiredev')} > 🗔 HireDev</a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/userreview')} > 💬 Reviews </a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/userpayment')} > 💰 payments</a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/usersetting')} > ⚙️ Settings</a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/userlogout')} > 🪩  logout</a> 
+                </div>
             </div>
-        </div>
-
-    </>);
+        </>
+    );
 }
