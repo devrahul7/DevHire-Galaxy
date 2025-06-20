@@ -11,7 +11,7 @@ export default function Sidebar(){
                 
                 <a  class="sidebar-item active" onClick={() => navigate('/admindashboard')} > 📊 Dashboard</a>
                 <a  class="sidebar-item " onClick={() => navigate('/adminprojects')} > 📁 Projects</a>
-                <a  class="sidebar-item " onClick={() => navigate('/')} > 👤 Freelancer</a>
+                <a  class="sidebar-item " onClick={() => navigate('/adminfreelancer')} > 👤 Freelancer</a>
                 <a  class="sidebar-item " onClick={() => navigate('/admindeposit')} > 💰 Deposit </a>
                 <a  class="sidebar-item " onClick={() => navigate('/adminwithdraw')} > 💸 Withdraw</a>
                 <a  class="sidebar-item " onClick={() => navigate('/admintransaction')} > 📝 Transaction</a>

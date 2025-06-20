@@ -1,4 +1,6 @@
 import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
+
+import Homepage from './pages/Homepage.jsx';
 import Freelancerprofile from './pages/Admindashboard/Freelancerprofile.jsx';
 import Freelancerdetails from './pages/Admindashboard/Freelancerdetails.jsx';
 import Userdashboard from './pages/Userdashboard/Userdashboard.jsx';
@@ -17,7 +19,10 @@ export default function App(){
     return(<>
     <Router>
         <Routes>
-            <Route path='/' element={<Freelancerdetails/>}></Route>
+            <Route path='/' element={<Homepage/>}></Route>
+
+            {/* <Route path='/' element={<Freelancerdetails/>}></Route> */}
+           
        
             <Route path='/freelancerprofile' element={<Freelancerprofile/>}></Route>
     
