@@ -7,12 +7,14 @@ import timothyImage from '../.././assets/timothy.jpeg';
 import janetImage from '../.././assets/janet.avif';
 import jamesImage from '../.././assets/james.avif';
 import floydImage from '../.././assets/floyd.avif';
+import Adminsidebar from '../../components/Adminsidebar';
 
 export default function Admindeposit(){
     return (<>
 
+<Adminsidebar/>
 
-    <div class="container">
+    <div class="containerdeposit">
         <header>
             <p class="breadcrumbs">Home / Deposits</p>
             <h1>Deposits</h1>

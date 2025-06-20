@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 
 import  styles from '../../cssfolder/Admindashboardcss/Admintransaction.module.css';
+import Adminsidebar from '../../components/Adminsidebar';
 
 
 const Admintransaction = () => {
@@ -78,7 +79,8 @@ const Admintransaction = () => {
     return status.toLowerCase() === 'paid' ? styles.statusPaid : styles.statusPending;
   };
 
-  return (
+  return (<>
+    <Adminsidebar/>
     <div className={styles.container}>
       <h1 className={styles.title}>Wallet</h1>
       
@@ -169,6 +171,7 @@ const Admintransaction = () => {
         </table>
       </div>
     </div>
+    </>
   );
 };
 

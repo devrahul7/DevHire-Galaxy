@@ -1,5 +1,5 @@
 
-import Sidebar from '../../components/Sidebar';
+import Sidebar from '../../components/Adminsidebar';
 import '../../cssfolder/Admindashboardcss/Adminprojects.css';
 
 export default function Adminprojects(){
@@ -29,7 +29,7 @@ export default function Adminprojects(){
         </div>
     </div>
 
-    <div class="container">
+    <div class="containerprojects">
          {/* Sidebar  */}
        <Sidebar/>
 

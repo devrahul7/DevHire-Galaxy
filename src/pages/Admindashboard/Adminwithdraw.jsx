@@ -7,11 +7,12 @@ import timothyImage from '../.././assets/timothy.jpeg';
 import janetImage from '../.././assets/janet.avif';
 import jamesImage from '../.././assets/james.avif';
 import floydImage from '../.././assets/floyd.avif';
+import Adminsidebar from '../../components/Adminsidebar';
 
 export default function Adminwithdraw(){
     return (<>
-   
-    <div class="container">
+   <Adminsidebar/> 
+    <div class="containerone">
         <div class="breadcrumb">
             <a href="#">Home</a> / Withdrawals
         </div>
@@ -202,7 +203,7 @@ export default function Adminwithdraw(){
                         <td>
                             <div class="user-info">
                                 
-  <div>  <img src={sitaImage} alt="sita Mahalaxmi picture" /> </div>
+                     <div>  <img src={sitaImage} alt="sita Mahalaxmi picture" /> </div>
 
                                 <div class="user-details">
                                     <div class="user-name">Sita Mahalaxmi</div>
@@ -233,7 +234,7 @@ export default function Adminwithdraw(){
                         <td>
                             <div class="user-info">
                                 
-  <div>  <img src={georgeImage} alt="George picture" /> </div>
+                         <div>  <img src={georgeImage} alt="George picture" /> </div>
 
                                 <div class="user-details">
                                     <div class="user-name">George Krickson</div>

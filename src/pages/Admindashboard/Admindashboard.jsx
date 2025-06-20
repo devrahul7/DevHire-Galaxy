@@ -1,6 +1,6 @@
 
 import '../../cssfolder/Admindashboardcss/Admindashboard.css';
-import Sidebar from '../../components/Sidebar';
+import AdminSidebar from '../../components/Adminsidebar';
 
 
     export default function Admindashboard() {
@@ -27,9 +27,9 @@ import Sidebar from '../../components/Sidebar';
         </div>
     </div>
 
-    <div class="container">
+    <div class="containeradmin">
         {/*  Sidebar  */}
-       <Sidebar/>
+       <AdminSidebar/>
         {/*  Main Content  */}
         <div class="main-content">
             <div class="page-header">

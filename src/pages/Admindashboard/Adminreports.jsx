@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 
 import  styles from '../../cssfolder/Admindashboardcss/Adminreports.module.css';
+import Sidebar from '../../components/Adminsidebar';
 
 
 const Adminreports = () => {
@@ -76,13 +77,14 @@ const Adminreports = () => {
   );
 
   return (
+     <> 
+<div id='abcd'><Sidebar/></div>
     <div className={styles.container}>
       {/* Header */}
       <div className={styles.header}>
         <div className={styles.breadcrumb}>Home / Reports</div>
         <h1 className={styles.pageTitle}>Reports</h1>
       </div>
-
       {/* Navigation Tabs */}
       <div className={styles.navTabs}>
         <a href="#" className={`${styles.navTab} ${styles.active}`}>Projects</a>
@@ -220,6 +222,7 @@ const Adminreports = () => {
         </table>
       </div>
     </div>
+    </>
   );
 };
 

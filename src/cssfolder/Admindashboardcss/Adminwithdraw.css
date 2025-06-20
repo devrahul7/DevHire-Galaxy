@@ -12,10 +12,10 @@
             color: #333;
         }
 
-        .container {
-            max-width: 2000px;
-            margin: 0 auto;
+        .containerone {
+            max-width: 1800px;
             padding: 20px;
+            margin-left: 12% !important;
         }
 
         .breadcrumb {

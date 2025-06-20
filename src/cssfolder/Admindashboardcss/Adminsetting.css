@@ -1,0 +1,345 @@
+
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .kfj-settings-container {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            padding: 20px;
+            margin-left: 13% !important;
+        }
+
+        .kfj-settings-header {
+            margin-bottom: 20px;
+        }
+
+        .kfj-settings-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .kfj-breadcrumb {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .kfj-breadcrumb-link {
+            color: #666;
+            text-decoration: none;
+        }
+
+        .kfj-breadcrumb-link:hover {
+            color: #333;
+        }
+
+        .kfj-tabs-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .kfj-tabs-nav {
+            display: flex;
+            border-bottom: 1px solid #e9ecef;
+            background-color: #fff;
+        }
+
+        .kfj-tab-button {
+            padding: 12px 20px;
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .kfj-tab-button.kfj-tab-active {
+            color: #ff6b35;
+            background-color: #ff6b35;
+            color: white;
+        }
+
+        .kfj-tab-button:hover {
+            background-color: #f8f9fa;
+        }
+
+        .kfj-tab-button.kfj-tab-active:hover {
+            background-color: #ff6b35;
+        }
+
+        .kfj-form-content {
+            padding: 30px;
+        }
+
+        .kfj-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .kfj-form-section {
+            background: white;
+        }
+
+        .kfj-section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .kfj-form-group {
+            margin-bottom: 20px;
+        }
+
+        .kfj-form-label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .kfj-form-label.kfj-required::after {
+            content: " *";
+            color: #dc3545;
+        }
+
+        .kfj-form-input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+        }
+
+        .kfj-form-input:focus {
+            outline: none;
+            border-color: #ff6b35;
+            box-shadow: 0 0 0 2px rgba(255, 107, 53, 0.1);
+        }
+
+        .kfj-form-select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        .kfj-upload-area {
+            border: 2px dashed #ddd;
+            border-radius: 4px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: border-color 0.2s ease;
+            position: relative;
+        }
+
+        .kfj-upload-area:hover {
+            border-color: #ff6b35;
+        }
+
+        .kfj-upload-button {
+            background-color: #ff6b35;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .kfj-upload-text {
+            font-size: 12px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .kfj-logo-preview {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .kfj-logo-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #ff6b35;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        .kfj-logo-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .kfj-logo-text {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .kfj-remove-icon {
+            width: 16px;
+            height: 16px;
+            background-color: #dc3545;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            cursor: pointer;
+        }
+
+        .kfj-favicon-preview {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .kfj-favicon-icon {
+            width: 32px;
+            height: 32px;
+            background-color: #ff6b35;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+
+        .kfj-favicon-icon svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .kfj-rtl-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .kfj-toggle-label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        .kfj-toggle-switch {
+            position: relative;
+            width: 50px;
+            height: 24px;
+            background-color: #ddd;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .kfj-toggle-switch.kfj-toggle-active {
+            background-color: #ff6b35;
+        }
+
+        .kfj-toggle-slider {
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+        }
+
+        .kfj-toggle-active .kfj-toggle-slider {
+            transform: translateX(26px);
+        }
+
+        .kfj-form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .kfj-button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .kfj-btn {
+            padding: 12px 24px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .kfj-btn-primary {
+            background-color: #ff6b35;
+            color: white;
+            border: none;
+        }
+
+        .kfj-btn-primary:hover {
+            background-color: #e55a2e;
+        }
+
+        .kfj-btn-secondary {
+            background-color: white;
+            color: #666;
+            border: 1px solid #ddd;
+        }
+
+        .kfj-btn-secondary:hover {
+            background-color: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+            .kfj-form-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .kfj-tabs-nav {
+                flex-wrap: wrap;
+            }
+
+            .kfj-tab-button {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+
+            .kfj-form-row {
+                grid-template-columns: 1fr;
+            }
+        }

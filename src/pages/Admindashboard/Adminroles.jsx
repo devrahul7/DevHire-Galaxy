@@ -1,4 +1,5 @@
 import '../../cssfolder/Admindashboardcss/Adminroles.css';
+import Sidebar from '../../components/Adminsidebar';
 
 import React, { useState, useMemo } from 'react';
 import { Plus, ChevronDown, Eye, Edit, Trash2, ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from 'lucide-react';
@@ -92,6 +93,7 @@ const Adminroles = () => {
   };
 
   return (
+    <>  <Sidebar/>
     <div className="roles-permission-container">
       {/* Header */}
       <div className="header">
@@ -253,6 +255,7 @@ const Adminroles = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -7,11 +7,14 @@ import timothyImage from '../.././assets/timothy.jpeg';
 import janetImage from '../.././assets/janet.avif';
 import jamesImage from '../.././assets/james.avif';
 import floydImage from '../.././assets/floyd.avif';
+import { Sidebar } from 'lucide-react';
+import Adminsidebar from '../../components/Adminsidebar';
 
 export default function Adminfreelancer(){
     return (<>
     
-    <div>
+        <Adminsidebar/>
+    <div id='mainone'>
     <div class="header">
         <div>
             <h1>Freelancer</h1>

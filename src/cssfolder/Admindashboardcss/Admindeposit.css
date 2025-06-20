@@ -7,10 +7,11 @@ body {
     padding: 2rem;
 }
 
-.container {
-    max-width: 20 00px;
+.containerdeposit {
+    max-width: 1700px;
     margin: auto;
     display: block;
+    margin-left: 12% !important;
 }
 
 header {
