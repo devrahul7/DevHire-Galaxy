@@ -13,7 +13,7 @@ import Adminsidebar from '../../components/Adminsidebar';
 export default function Adminfreelancer(){
     return (<>
     
-        <Adminsidebar/>
+       <div id='aq'> <Adminsidebar/> </div>
     <div id='mainone'>
     <div class="header">
         <div>

@@ -3,7 +3,8 @@
 import React, { useState } from 'react';
 
 import  styles from '../../cssfolder/Admindashboardcss/Adminreports.module.css';
-import Sidebar from '../../components/Adminsidebar';
+import Adminsidebar from '../../components/Adminsidebar';
+
 
 
 const Adminreports = () => {
@@ -78,7 +79,7 @@ const Adminreports = () => {
 
   return (
      <> 
-<div id='abcd'><Sidebar/></div>
+<div id='abcd'><Adminsidebar/></div>
     <div className={styles.container}>
       {/* Header */}
       <div className={styles.header}>
