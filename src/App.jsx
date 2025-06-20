@@ -12,6 +12,7 @@ import Adminwithdraw from './pages/Admindashboard/Adminwithdraw.jsx';
 import Adminroles from './pages/Admindashboard/Adminroles.jsx';
 import Admintransaction from './pages/Admindashboard/Admintransaction.jsx';
 import Adminreports from './pages/Admindashboard/Adminreports.jsx';
+import Adminsetting from './pages/Admindashboard/Adminsetting.jsx';
 
 
 
@@ -45,6 +46,7 @@ export default function App(){
             <Route path='/admintransaction' element={ <Admintransaction/> }></Route>
 
             <Route path='/adminreports' element={ <Adminreports/> }></Route>
+            <Route path='/adminsetting' element={ <Adminsetting/> }></Route>
 
 
         </Routes>
