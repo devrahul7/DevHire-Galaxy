@@ -1,4 +1,7 @@
-import '../../cssfolder/Admindashboardcss/Freelancerdetails.css';
+
+import '../../cssfolder/Userdashboardcss/Userhiredev.css';
+
+import { useNavigate } from 'react-router-dom'; 
 
 import georgeImage from '../.././assets/george.jpg';
 import sitaImage from '../.././assets/sita.jpg';
@@ -8,7 +11,8 @@ import jamesImage from '../.././assets/james.avif';
 import floydImage from '../.././assets/floyd.avif';
 
 
-export default function Freelancerdetails(){
+export default function Userhiredev(){
+    const navigate = useNavigate(); 
     return   <>
     <div className="container">
         {/*  Sidebar Filters */}
@@ -126,7 +130,7 @@ export default function Freelancerdetails(){
                         <div className="price">$25 Hourly</div>
                         <div className="actions">
                             <button className="invite-btn">Invite</button>
-                            <button className="profile-btn">View Profile</button>
+                    <button className="profile-btn" onClick={() => navigate('/userfreelancerviewprofile')}> View Profile</button>
                         </div>
                     </div>
                 </div>

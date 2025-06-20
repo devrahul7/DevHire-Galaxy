@@ -1,8 +1,7 @@
-// import '../.././cssfolder/Freelancerprofile.css'
-import '../../cssfolder/Admindashboardcss/Freelancerprofile.css';
+import '../../cssfolder/Userdashboardcss/Userfreelancerviewprofile.css';
 
 
-export default  function Freelancerprofile() {
+export default  function Userfreelancerviewprofile() {
 
   return (
     <>

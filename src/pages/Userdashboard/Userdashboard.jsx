@@ -17,6 +17,7 @@ import {
   Settings,
   LogOut
 } from 'lucide-react';
+import Usersidebar from '../../components/Usersidebar';
 
 const Userdashboard = () => {
   const overviewData = [
@@ -185,16 +186,7 @@ const Userdashboard = () => {
           </div>
         </div>
         
-        <nav style={{ padding: '0 16px' }}>
-          <SidebarItem icon={BarChart3} label="Dashboard" isActive={true} />
-          <SidebarItem icon={FolderOpen} label="Projects" hasChevron={true} />
-          <SidebarItem icon={Heart} label="Favourites" hasChevron={true} />
-          <SidebarItem icon={Star} label="Reviews" />
-          <SidebarItem icon={MessageCircle} label="Chat" />
-          <SidebarItem icon={CreditCard} label="Payments" />
-          <SidebarItem icon={Settings} label="Settings" hasChevron={true} />
-          <SidebarItem icon={LogOut} label="Logout" />
-        </nav>
+      <Usersidebar/>
       </div>
 
       {/* Main Content */}
