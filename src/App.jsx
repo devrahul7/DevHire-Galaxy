@@ -13,6 +13,7 @@ import Adminreports from './pages/Admindashboard/Adminreports.jsx';
 import Adminsetting from './pages/Admindashboard/Adminsetting.jsx';
 import Userhiredev from './pages/Userdashboard/Userhiredev.jsx';
 import Userfreelancerviewprofile from './pages/Userdashboard/Userfreelancerviewprofile.jsx';
+import Userpayment from './pages/Userdashboard/Userpayment.jsx';
 
 
 
@@ -35,6 +36,12 @@ export default function App(){
             <Route path='/admintransaction' element={ <Admintransaction/> }></Route>
             <Route path='/adminreports' element={ <Adminreports/> }></Route>
             <Route path='/adminsetting' element={ <Adminsetting/> }></Route>
+
+
+
+            <Route path='/userpayment' element={ <Userpayment/> }></Route>
+
+
 
 
 
