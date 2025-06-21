@@ -14,6 +14,7 @@ import Adminsetting from './pages/Admindashboard/Adminsetting.jsx';
 import Userhiredev from './pages/Userdashboard/Userhiredev.jsx';
 import Userfreelancerviewprofile from './pages/Userdashboard/Userfreelancerviewprofile.jsx';
 import Userpayment from './pages/Userdashboard/Userpayment.jsx';
+import Userproject from './pages/Userdashboard/Userproject.jsx';
 
 
 
@@ -40,6 +41,7 @@ export default function App(){
 
 
             <Route path='/userpayment' element={ <Userpayment/> }></Route>
+            <Route path='/userprojects' element={ <Userproject/> }></Route>
 
 
 
