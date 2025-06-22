@@ -18,6 +18,8 @@ import Userproject from './pages/Userdashboard/Userproject.jsx';
 import Userpostjob from './pages/Userdashboard/Userpostjob.jsx';
 import Userreview from './pages/Userdashboard/Userreview.jsx';
 import Usersetting from './pages/Userdashboard/Usersetting.jsx';
+import Developerdashboard from './pages/Developerdashboard/Developerdashboard.jsx';
+import Developerreview from './pages/Developerdashboard/Developerreview.jsx';
 
 
 
@@ -30,7 +32,6 @@ export default function App(){
             <Route path='userhiredev' element={<Userhiredev/>}></Route>
            
             <Route path='/userfreelancerviewprofile' element={<Userfreelancerviewprofile/>}></Route>
-            <Route path='/userdashboard' element={<Userdashboard/>}></Route>
             <Route path='/admindashboard' element={<Admindashboard/>}></Route>
             <Route path='/adminprojects' element={<Adminprojects/>}></Route>
             <Route path='/adminfreelancer' element={<Adminfreelancer/>}></Route>
@@ -43,11 +44,23 @@ export default function App(){
 
 
 
+            <Route path='/userdashboard' element={<Userdashboard/>}></Route>
             <Route path='/userpayment' element={ <Userpayment/> }></Route>
             <Route path='/userprojects' element={ <Userproject/> }></Route>
             <Route path='/userpostjob' element={ <Userpostjob/>  }></Route>
             <Route path='/userreview' element={ <Userreview/>  }></Route>
             <Route path='/usersetting' element={ <Usersetting/>  }></Route>
+            
+            
+            
+            <Route path='/developerdashboard' element={ <Developerdashboard/>  }></Route>
+            <Route path='/developerreviews' element={ <Developerreview/>  }></Route>
+            
+            
+            
+
+
+
 
 
 
