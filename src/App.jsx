@@ -15,6 +15,9 @@ import Userhiredev from './pages/Userdashboard/Userhiredev.jsx';
 import Userfreelancerviewprofile from './pages/Userdashboard/Userfreelancerviewprofile.jsx';
 import Userpayment from './pages/Userdashboard/Userpayment.jsx';
 import Userproject from './pages/Userdashboard/Userproject.jsx';
+import Userpostjob from './pages/Userdashboard/Userpostjob.jsx';
+import Userreview from './pages/Userdashboard/Userreview.jsx';
+import Usersetting from './pages/Userdashboard/Usersetting.jsx';
 
 
 
@@ -42,6 +45,9 @@ export default function App(){
 
             <Route path='/userpayment' element={ <Userpayment/> }></Route>
             <Route path='/userprojects' element={ <Userproject/> }></Route>
+            <Route path='/userpostjob' element={ <Userpostjob/>  }></Route>
+            <Route path='/userreview' element={ <Userreview/>  }></Route>
+            <Route path='/usersetting' element={ <Usersetting/>  }></Route>
 
 
 

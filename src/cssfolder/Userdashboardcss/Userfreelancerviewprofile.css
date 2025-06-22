@@ -1,378 +1,430 @@
- * {
+* {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
-        body {
+        .freelancer-profile-wrapper-x {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background-color: #f8f9fa;
-            padding: 20px;
+            background-color: #f8fafc;
+            min-height: 100vh;
+            padding: 24px;
         }
 
-        .container {
-            max-width: 2100px;
+        .freelancer-main-container-x {
+            margin-left: 13% !important;
+            max-width: 1700px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: 2fr 1fr;
-            gap: 30px;
+            gap: 24px;
         }
 
-        .main-content {
+        /* Profile Header Section */
+        .freelancer-header-card-x {
             background: white;
             border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
         }
 
-        .sidebar {
+        .freelancer-profile-top-x {
             display: flex;
-            flex-direction: column;
+            align-items: flex-start;
             gap: 20px;
+            margin-bottom: 24px;
         }
 
-        .sidebar-card {
-            background: white;
-            border-radius: 12px;
-            padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        .freelancer-avatar-container-x {
+            flex-shrink: 0;
         }
 
-        /* Header Section */
-        .header {
-            margin-top: 53px;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-
-        .avatar {
+        .freelancer-avatar-image-x {
             width: 80px;
             height: 80px;
             border-radius: 50%;
-            background: linear-gradient(45deg, #4a90e2, #357abd);
+            object-fit: cover;
+            border: 3px solid #e2e8f0;
+        }
+
+        .freelancer-info-details-x {
+            flex: 1;
+        }
+
+        .freelancer-name-title-x {
+            font-size: 28px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 4px;
+        }
+
+        .freelancer-job-title-x {
+            font-size: 16px;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+
+        .freelancer-meta-info-x {
             display: flex;
             align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
+            gap: 24px;
+            flex-wrap: wrap;
         }
 
-        .header-info h1 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 5px;
+        .freelancer-meta-item-x {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+            color: #64748b;
         }
 
-        .header-info .role {
-            color: #7f8c8d;
+        .freelancer-meta-icon-x {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+        }
+
+        .freelancer-rating-display-x {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .freelancer-star-icon-x {
+            color: #fbbf24;
             font-size: 16px;
         }
 
-        .header-meta {
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            margin-top: 15px;
-            color: #7f8c8d;
-            font-size: 14px;
-        }
-
-        .meta-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-
         /* Stats Section */
-        .stats {
+        .freelancer-stats-grid-x {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-bottom: 40px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #e2e8f0;
         }
 
-        .stat-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
+        .freelancer-stat-item-x {
+            text-align: left;
         }
 
-        .stat-item {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .stat-icon {
-            width: 40px;
-            height: 40px;
+        .freelancer-stat-icon-x {
+            width: 32px;
+            height: 32px;
             border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 18px;
+            margin-bottom: 8px;
+            font-size: 16px;
         }
 
-        .recommended .stat-icon { background: #fff3e0; color: #f57c00; }
-        .completed .stat-icon { background: #fff3e0; color: #f57c00; }
-        .ongoing .stat-icon { background: #fff3e0; color: #f57c00; }
-        .feedbacks .stat-icon { background: #fff3e0; color: #f57c00; }
-        .rehired .stat-icon { background: #fff3e0; color: #f57c00; }
-        .response .stat-icon { background: #fff3e0; color: #f57c00; }
-
-        .stat-content h3 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 2px;
+        .freelancer-recommended-icon-x {
+            background-color: #fff7ed;
+            color: #ea580c;
         }
 
-        .stat-content p {
-            color: #7f8c8d;
-            font-size: 13px;
+        .freelancer-completed-icon-x {
+            background-color: #fef3c7;
+            color: #d97706;
         }
 
-        .stat-value {
+        .freelancer-ongoing-icon-x {
+            background-color: #fef3c7;
+            color: #d97706;
+        }
+
+        .freelancer-feedback-icon-x {
+            background-color: #fef2f2;
+            color: #dc2626;
+        }
+
+        .freelancer-retired-icon-x {
+            background-color: #fef2f2;
+            color: #dc2626;
+        }
+
+        .freelancer-response-icon-x {
+            background-color: #fef2f2;
+            color: #dc2626;
+        }
+
+        .freelancer-stat-value-x {
             font-size: 24px;
             font-weight: 700;
-            color: #2c3e50;
+            color: #1e293b;
+            margin-bottom: 4px;
         }
 
-        /* Section Headings */
-        .section-title {
-            font-size: 22px;
+        .freelancer-stat-label-x {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Description Section */
+        .freelancer-description-card-x {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 24px;
+        }
+
+        .freelancer-section-title-x {
+            font-size: 20px;
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 20px;
+            color: #1e293b;
+            margin-bottom: 16px;
         }
 
-        /* Description */
-        .description p {
-            line-height: 1.6;
-            color: #555;
-            margin-bottom: 15px;
+        .freelancer-description-text-x {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #475569;
+            margin-bottom: 16px;
         }
 
-        /* Experience */
-        .experience-item {
+        /* Experience Section */
+        .freelancer-experience-card-x {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .freelancer-experience-item-x {
             display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-            padding-bottom: 25px;
-            border-bottom: 1px solid #eee;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #f1f5f9;
         }
 
-        .experience-item:last-child {
-            border-bottom: none;
+        .freelancer-experience-item-x:last-child {
             margin-bottom: 0;
             padding-bottom: 0;
+            border-bottom: none;
         }
 
-        .exp-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-            background: #e74c3c;
+        .freelancer-exp-icon-x {
+            width: 40px;
+            height: 40px;
+            background-color: #ef4444;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 20px;
+            font-size: 18px;
             flex-shrink: 0;
         }
 
-        .exp-content h4 {
+        .freelancer-exp-content-x {
+            flex: 1;
+        }
+
+        .freelancer-exp-header-x {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 4px;
+        }
+
+        .freelancer-exp-title-x {
             font-size: 16px;
             font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 3px;
+            color: #1e293b;
         }
 
-        .exp-dates {
-            color: #7f8c8d;
+        .freelancer-exp-period-x {
             font-size: 12px;
-            margin-left: 10px;
+            color: #64748b;
+            background-color: #f1f5f9;
+            padding: 4px 8px;
+            border-radius: 4px;
         }
 
-        .exp-company {
-            color: #7f8c8d;
+        .freelancer-exp-company-x {
             font-size: 14px;
+            color: #64748b;
             margin-bottom: 8px;
         }
 
-        .exp-content p {
-            color: #666;
-            line-height: 1.5;
+        .freelancer-exp-description-x {
             font-size: 14px;
+            line-height: 1.6;
+            color: #475569;
         }
 
-        /* Budget Card */
-        .budget-header {
+        /* Sidebar */
+        .freelancer-sidebar-container-x {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .freelancer-sidebar-card-x {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .freelancer-budget-section-x {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 24px;
         }
 
-        .budget-title {
-            color: #7f8c8d;
+        .freelancer-budget-label-x {
             font-size: 14px;
-            margin-bottom: 5px;
+            color: #64748b;
+            margin-bottom: 8px;
         }
 
-        .budget-amount {
-            font-size: 28px;
+        .freelancer-budget-amount-x {
+            font-size: 24px;
             font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 3px;
+            color: #1e293b;
+            margin-bottom: 4px;
         }
 
-        .budget-type {
-            color: #7f8c8d;
+        .freelancer-budget-rate-x {
             font-size: 14px;
+            color: #64748b;
         }
 
-        .info-list {
-            list-style: none;
+        .freelancer-details-list-x {
+            margin-bottom: 24px;
         }
 
-        .info-item {
+        .freelancer-detail-row-x {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 12px 0;
-            border-bottom: 1px solid #f0f0f0;
+            padding: 8px 0;
+            border-bottom: 1px solid #f1f5f9;
         }
 
-        .info-item:last-child {
+        .freelancer-detail-row-x:last-child {
             border-bottom: none;
         }
 
-        .info-label {
-            color: #7f8c8d;
+        .freelancer-detail-label-x {
             font-size: 14px;
+            color: #64748b;
             display: flex;
             align-items: center;
             gap: 8px;
         }
 
-        .info-value {
-            color: #2c3e50;
-            font-weight: 500;
+        .freelancer-detail-value-x {
             font-size: 14px;
+            color: #1e293b;
+            font-weight: 500;
         }
 
-        .send-invite {
-            background: #e74c3c;
+        .freelancer-invite-btn-x {
+            width: 100%;
+            background-color: #ea580c;
             color: white;
             border: none;
-            padding: 15px;
+            padding: 12px 24px;
             border-radius: 8px;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             cursor: pointer;
-            width: 100%;
-            margin-top: 20px;
-            transition: background-color 0.2s;
+            transition: background-color 0.2s ease;
         }
 
-        .send-invite:hover {
-            background: #c0392b;
+        .freelancer-invite-btn-x:hover {
+            background-color: #dc2626;
         }
 
-        /* Skills */
-        .skills-grid {
+        /* Skills Section */
+        .freelancer-skills-grid-x {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
         }
 
-        .skill-tag {
-            background: #f8f9fa;
-            border: 1px solid #e9ecef;
-            padding: 8px 15px;
+        .freelancer-skill-tag-x {
+            background-color: #f1f5f9;
+            color: #475569;
+            padding: 6px 12px;
             border-radius: 20px;
-            font-size: 13px;
-            color: #495057;
+            font-size: 12px;
+            font-weight: 500;
         }
 
-        /* Map */
-        .map-container {
+        /* Location Section */
+        .freelancer-map-container-x {
             width: 100%;
             height: 200px;
-            background: #f0f0f0;
+            background-color: #f1f5f9;
             border-radius: 8px;
             position: relative;
             overflow: hidden;
         }
 
-        .map-placeholder {
+        .freelancer-map-placeholder-x {
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, #e8f4f8, #d4e8f0);
+            background: linear-gradient(45deg, #e2e8f0 25%, transparent 25%), 
+                        linear-gradient(-45deg, #e2e8f0 25%, transparent 25%), 
+                        linear-gradient(45deg, transparent 75%, #e2e8f0 75%), 
+                        linear-gradient(-45deg, transparent 75%, #e2e8f0 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #7f8c8d;
+            color: #64748b;
             font-size: 14px;
-            position: relative;
         }
 
-        .map-pin {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 30px;
-            height: 30px;
-            background: #e74c3c;
-            border-radius: 50% 50% 50% 0;
-            transform: rotate(-45deg) translate(-50%, -50%);
-            transform-origin: 0 0;
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .freelancer-main-container-x {
+                grid-template-columns: 1fr;
+            }
+            
+            .freelancer-stats-grid-x {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
-
-        .map-pin::after {
-            content: '';
-            position: absolute;
-            top: 6px;
-            left: 6px;
-            width: 18px;
-            height: 18px;
-            background: white;
-            border-radius: 50%;
-        }
-
-        /* Icons */
-        .icon-location::before { content: "📍"; }
-        .icon-calendar::before { content: "📅"; }
-        .icon-star::before { content: "⭐"; }
-        .icon-building::before { content: "🏢"; }
-        .icon-clock::before { content: "🕐"; }
-        .icon-delivery::before { content: "🚚"; }
-        .icon-language::before { content: "🌐"; }
-        .icon-phone::before { content: "📞"; }
-        .icon-mail::before { content: "📧"; }
 
         @media (max-width: 768px) {
-            .container {
-                grid-template-columns: 1fr;
-                gap: 20px;
+            .freelancer-profile-wrapper-x {
+                padding: 16px;
             }
             
-            .stats {
-                grid-template-columns: 1fr;
-                gap: 20px;
+            .freelancer-header-card-x,
+            .freelancer-description-card-x,
+            .freelancer-experience-card-x,
+            .freelancer-sidebar-card-x {
+                padding: 20px;
             }
             
-            .header {
+            .freelancer-profile-top-x {
                 flex-direction: column;
                 text-align: center;
             }
             
-            .header-meta {
+            .freelancer-meta-info-x {
                 justify-content: center;
-                flex-wrap: wrap;
+            }
+            
+            .freelancer-stats-grid-x {
+                grid-template-columns: 1fr;
+            }
+            
+            .freelancer-exp-header-x {
+                flex-direction: column;
+                gap: 8px;
             }
         }

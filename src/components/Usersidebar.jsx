@@ -8,7 +8,7 @@ export default function Usersidebar(){
         <>
             <div className="user-sidebar-container"> {/* Renamed class */}
                 <div className="user-sidebar-section"> {/* Renamed class */}
-                    <div className="user-sidebar-title">Main</div> {/* Renamed class */}
+                    <div className="user-sidebar-title">User Dashboard</div> {/* Renamed class */}
                     
                     <a className="user-sidebar-item active" onClick={() => navigate('/userdashboard')} > 📊 Dashboard</a> 
                     <a className="user-sidebar-item" onClick={() => navigate('/userprojects')} > 📁 Projects</a> 
@@ -17,7 +17,7 @@ export default function Usersidebar(){
                     <a className="user-sidebar-item" onClick={() => navigate('/userreview')} > 💬 Reviews </a> 
                     <a className="user-sidebar-item" onClick={() => navigate('/userpayment')} > 💰 payments</a> 
                     <a className="user-sidebar-item" onClick={() => navigate('/usersetting')} > ⚙️ Settings</a> 
-                    <a className="user-sidebar-item" onClick={() => navigate('/userlogout')} > 🪩  logout</a> 
+                    <a className="user-sidebar-item"  > 🪩  logout</a> 
                 </div>
             </div>
         </>
