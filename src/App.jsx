@@ -20,6 +20,7 @@ import Userreview from './pages/Userdashboard/Userreview.jsx';
 import Usersetting from './pages/Userdashboard/Usersetting.jsx';
 import Developerdashboard from './pages/Developerdashboard/Developerdashboard.jsx';
 import Developerreview from './pages/Developerdashboard/Developerreview.jsx';
+import Developerprojects from './pages/Developerdashboard/Developerprojects.jsx';
 
 
 
@@ -52,9 +53,10 @@ export default function App(){
             <Route path='/usersetting' element={ <Usersetting/>  }></Route>
             
             
-            
+             
             <Route path='/developerdashboard' element={ <Developerdashboard/>  }></Route>
             <Route path='/developerreviews' element={ <Developerreview/>  }></Route>
+            <Route path='/developerprojects' element={ <Developerprojects/> }></Route>
             
             
             
