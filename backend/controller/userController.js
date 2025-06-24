@@ -1,4 +1,4 @@
-const { request } = require("express");
+const { request, response } = require("express");
 const {Users} = require("../model/userSchema");
 
 
@@ -42,9 +42,47 @@ const register = async (request,response) => {
 // login {email address, password} -> database(postgres)
 
 
-//validation
+const login = async(request, response) => {
+   const {email, password} = request.body;
 
 
+//validation: check if fields are provided
+if(!email || !password){
+   return response.json({
+      status:false,
+      message: "Please enter both email and password.",
+   });
+}
+
+
+//check user in database
+try{
+const user = await Users.findOne({
+   where: {email, password},
+});
+
+if(user){
+   return response.json({
+      status:true,
+      message: "Login successful. Redirecting to dashboard..",
+   });
+} else{
+   return response.json({
+      status: false,
+      message:"Invalid email or password.",
+   });
+}
+
+
+}catch(error){
+   console.error("Login error:", error);
+   return response.status(500).json({
+      status:false,
+      message:"Internal server error. Please try again later.",
+   })
+}
+
+}
 
 
 
@@ -75,8 +113,10 @@ const getUserById = async (request,response) => {
    // locahost:5000/users/1
 
 }
-// forgot password
+
+
+
 // reset password -> old password ? new password else error retry
 // change profile -> old profile override new profile convert
 
-module.exports = { register , getUserById};
+module.exports = { login,register , getUserById};
