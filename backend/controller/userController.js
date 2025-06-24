@@ -113,10 +113,61 @@ const getUserById = async (request,response) => {
    // locahost:5000/users/1
 
 }
+// forgot password
+// forget password {email, newpassword} -> database(postgres)
+const forgetPassword = async(request, response) => {
+   const { email, newPassword } = request.body;
 
+   //Validation
+   if(!email || newPassword){
+      return response.json({
+         status: false,
+         message:"Email and new password are required.",
+      });
+   }
+
+
+
+   if(newPassword.length <6){
+      return response.json({
+         status:false,
+         message:"New password must be at least 6 characters"
+      });
+   }
+
+   ///Check if user exists
+   try {
+      const user = await Users.findOne({ where: { email}});
+
+      if(!user){
+         return response.json({
+            status:false,
+            message: "User not found with this email."
+         });
+      }
+
+      //update password
+      await Users.update(
+         {password: newPassword},
+         { where: { email }}
+      );
+
+      return response.json({
+         status:true,
+         message:"Password reset successful.",
+      });
+
+   } catch (error){
+      console.error("Forget password error:", error);
+      return response.status(500).json({
+         status: false,
+         message:"Server error. please try again later.",
+      });
+   }
+};
 
 
 // reset password -> old password ? new password else error retry
 // change profile -> old profile override new profile convert
 
-module.exports = { login,register , getUserById};
+module.exports = { login,register , getUserById, forgetPassword};
