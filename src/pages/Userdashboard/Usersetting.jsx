@@ -107,6 +107,7 @@ export default function Usersetting(){
                         <label class="form-label-unique">Zipcode</label>
                         <input type="text" class="form-input-unique" placeholder=""/>
                     </div>
+                        <button className='updateusersetting'>Update</button>
                 </div>
             </div>
         </form>

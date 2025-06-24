@@ -14,7 +14,7 @@ export default function Adminfreelancer(){
     return (<>
     
        <div id='aq'> <Adminsidebar/> </div>
-    <div id='mainone'>
+    <div id='mainonedone'>
     <div class="header">
         <div>
             <h1>Freelancer</h1>

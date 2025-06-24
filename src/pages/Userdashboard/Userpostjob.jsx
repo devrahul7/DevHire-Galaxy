@@ -4,6 +4,47 @@ import Usersidebar from "../../components/Usersidebar";
 
 export default function Userpostjob(){
 
+    //  // State to control the visibility of the success pop-up
+    // const [showSuccessPopup, setShowSuccessPopup] = useState(false);
+
+    // // Function to handle the "Post Job" button click
+    // const handlePostJob = () => {
+    //     // Here you would typically handle form submission,
+    //     // e.g., send data to an API.
+    //     // For this example, we just show the success pop-up.
+    //     setShowSuccessPopup(true);
+
+    //     // Optionally, hide the pop-up after a few seconds
+    //     setTimeout(() => {
+    //         setShowSuccessPopup(false);
+    //     }, 3000); // Pop-up disappears after 3 seconds
+    // };
+
+    // // Function to manually close the pop-up
+    // const closePopup = () => {
+    //     setShowSuccessPopup(false);
+    // };
+
+    // // Helper function for budget type selection
+    // const selectBudgetType = (type) => {
+    //     const hourlyOption = document.querySelector('.pcf-budget-option.hourly');
+    //     const fixedOption = document.querySelector('.pcf-budget-option.fixed');
+    //     const hourlyRadio = document.querySelector('input[name="budget-type"][value="hourly"]');
+    //     const fixedRadio = document.querySelector('input[name="budget-type"][value="fixed"]');
+
+    //     if (hourlyOption && fixedOption && hourlyRadio && fixedRadio) {
+    //         if (type === 'hourly') {
+    //             hourlyOption.classList.add('pcf-selected');
+    //             fixedOption.classList.remove('pcf-selected');
+    //             hourlyRadio.checked = true;
+    //         } else if (type === 'fixed') {
+    //             fixedOption.classList.add('pcf-selected');
+    //             hourlyOption.classList.remove('pcf-selected');
+    //             fixedRadio.checked = true;
+    //         }
+    //     }
+    // };
+
     return (<>
 
 <div>
@@ -129,6 +170,14 @@ export default function Userpostjob(){
                         <div class="pcf-input-prefix">
                             <span class="pcf-prefix-symbol">$</span>
                             <input type="number" id="budget-to" class="pcf-input" value="250"/>
+
+                             <button type="submit" className=' pcf-button'  >Post Job</button>
+
+
+
+
+
+                             
                         </div>
                     </div>
                 </div>

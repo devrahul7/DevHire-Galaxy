@@ -3,7 +3,7 @@
     width: 220px;
     background: white;
     border-right: 1px solid #e9ecef;
-    padding-top: 80px;
+    padding-top: 20px !important;
     position: fixed;
     height: 100vh;
     overflow-y: auto;

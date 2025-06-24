@@ -1,6 +1,6 @@
 /* General Body and Container Styles */
 .roles-permission-container {
-  max-width: 96rem; /* Corresponds to max-w-6xl */
+  max-width: 130rem; /* Corresponds to max-w-6xl */
   margin-left: auto;
   margin-right: auto;
   padding: 1.25rem; /* Corresponds to p-5 */
@@ -98,10 +98,11 @@
   background-color: #ffffff; /* Corresponds to bg-white */
   border-radius: 0.5rem; /* Corresponds to rounded-lg */
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); /* Corresponds to shadow-sm */
-  margin-top: 45px !important;
+  margin-top: -26px !important;
   margin-left: -196px;
   margin-right: -196px;
   overflow:visible
+  
 }
 
 .controls {
@@ -231,7 +232,8 @@
 
 .action-buttons {
   display: flex;
-  gap: 0.5rem; /* Corresponds to gap-2 */
+  gap: 0.7rem; /* Corresponds to gap-2 */
+  justify-content: flex-end;
 }
 
 .action-btn {
@@ -244,7 +246,7 @@
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-  color: #ffffff;
+  color: #111111;
 }
 
 .view-btn {

@@ -329,3 +329,26 @@
         .pcf-budget-option {
             position: relative;
         }
+
+
+        .pcf-button {
+    background-color:  #ea580c; /* Standard blue */
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.pcf-button:hover {
+    background-color:  #a73d05;
+}
+
+.pcf-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(171, 88, 5, 0.25);
+}
