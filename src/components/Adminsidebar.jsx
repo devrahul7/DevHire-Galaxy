@@ -19,7 +19,7 @@ export default function Adminsidebar() {
                     <a className="admin-sidebar-item" onClick={() => navigate('/adminreports')}> 📊 Reports</a>
                     <a className="admin-sidebar-item" onClick={() => navigate('/adminroles')}> 👥 Roles</a>
                     <a className="admin-sidebar-item" onClick={() => navigate('/adminsetting')}> ⚙️ Settings</a>
-                    <a className="admin-sidebar-item" > 🪩 Logout</a>
+                    <a className="admin-sidebar-item" onClick={() => navigate('/') }> 🪩 Logout</a>
                 </div>
             </div>
         </>

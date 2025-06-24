@@ -38,7 +38,7 @@ export default function Developersidebar(){
                         ⚙️ Settings
                     </a>
                     
-                    <a className="developer-sidebar-item">
+                    <a className="developer-sidebar-item"  onClick={() => navigate('/')} >
                         🚪 Logout
                     </a>
                 </div>

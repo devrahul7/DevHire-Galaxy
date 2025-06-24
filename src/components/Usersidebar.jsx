@@ -17,7 +17,7 @@ export default function Usersidebar(){
                     <a className="user-sidebar-item" onClick={() => navigate('/userreview')} > 💬 Reviews </a> 
                     <a className="user-sidebar-item" onClick={() => navigate('/userpayment')} > 💰 payments</a> 
                     <a className="user-sidebar-item" onClick={() => navigate('/usersetting')} > ⚙️ Settings</a> 
-                    <a className="user-sidebar-item"  > 🪩  logout</a> 
+                    <a className="user-sidebar-item" onClick={() => navigate('/')} > 🪩  logout</a> 
                 </div>
             </div>
         </>

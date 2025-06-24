@@ -11,6 +11,8 @@ import Adminroles from './pages/Admindashboard/Adminroles.jsx';
 import Admintransaction from './pages/Admindashboard/Admintransaction.jsx';
 import Adminreports from './pages/Admindashboard/Adminreports.jsx';
 import Adminsetting from './pages/Admindashboard/Adminsetting.jsx';
+
+
 import Userhiredev from './pages/Userdashboard/Userhiredev.jsx';
 import Userfreelancerviewprofile from './pages/Userdashboard/Userfreelancerviewprofile.jsx';
 import Userpayment from './pages/Userdashboard/Userpayment.jsx';
@@ -18,9 +20,12 @@ import Userproject from './pages/Userdashboard/Userproject.jsx';
 import Userpostjob from './pages/Userdashboard/Userpostjob.jsx';
 import Userreview from './pages/Userdashboard/Userreview.jsx';
 import Usersetting from './pages/Userdashboard/Usersetting.jsx';
+
 import Developerdashboard from './pages/Developerdashboard/Developerdashboard.jsx';
 import Developerreview from './pages/Developerdashboard/Developerreview.jsx';
 import Developerprojects from './pages/Developerdashboard/Developerprojects.jsx';
+
+import Developerpayment from './pages/Developerdashboard/Developerpayment.jsx';
 
 
 
@@ -57,6 +62,9 @@ export default function App(){
             <Route path='/developerdashboard' element={ <Developerdashboard/>  }></Route>
             <Route path='/developerreviews' element={ <Developerreview/>  }></Route>
             <Route path='/developerprojects' element={ <Developerprojects/> }></Route>
+
+
+            <Route path='/developerpayments' element={ <Developerpayment/>}></Route>
             
             
             
