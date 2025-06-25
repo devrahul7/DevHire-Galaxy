@@ -118,6 +118,8 @@ const getUserById = async (request,response) => {
 const forgetPassword = async(request, response) => {
    const { email, newPassword } = request.body;
 
+   const RESEND_KEY= "re_2AyXs46Z_NTWjT5q8ocynFrix1SgGYd8t"
+
    //Validation
    if(!email || newPassword){
       return response.json({
@@ -146,6 +148,8 @@ const forgetPassword = async(request, response) => {
          });
       }
 
+     
+
       //update password
       await Users.update(
          {password: newPassword},
@@ -167,7 +171,156 @@ const forgetPassword = async(request, response) => {
 };
 
 
-// reset password -> old password ? new password else error retry
-// change profile -> old profile override new profile convert
+const bcrypt = require("bcrypt");
 
-module.exports = { login,register , getUserById, forgetPassword};
+
+const resetPassword = async (request, response) => {
+  const { email, oldPassword, newPassword } = request.body;
+  
+  // Step 1: Basic validation
+  if (!email || !oldPassword || !newPassword) {
+    return response.json({
+      status: false,
+      message: "Email, old password, and new password are required.",
+    });
+  }
+
+  try {
+    // Step 2: Find user by email only (not password)
+    const user = await Users.findOne({
+      where: {
+        email: email
+      }
+    });
+    // Step 3: Check if user exists
+    if (!user) {
+      return response.json({
+        status: false,
+        message: "User not found."
+      });
+    }
+
+    console.log(user.dataValues);
+
+    const isOldPasswordValid = await bcrypt.compare(oldPassword, user.dataValues.password);
+    
+    if (!isOldPasswordValid) {
+      return response.json({
+        status: false,
+        message: "Your old password doesn't match!"
+      });
+    }
+    const hashedNewPassword = await bcrypt.hash(newPassword, 10);
+    
+    await Users.update(
+      { password: hashedNewPassword },
+      { where: { email } }
+    );
+
+    return response.json({
+      status: true,
+      message: "Password reset successfully.",
+    });
+
+  } catch (error) {
+    console.error("Reset password error:", error);
+    return response.status(500).json({
+      status: false,
+      message: "Server error. Please try again later.",
+    });
+  }
+};
+
+// reset password
+// user -> email, oldPassword,newPassword
+//condition check 
+// email fetch -> all data hashPassword 
+//oldpassword and hashPassword check
+// new password if reset set  
+// password change bhayo
+
+
+
+
+// admin login and register
+//admin login
+
+const adminlogin = async(request, response) => {
+   const {email, password } = request.body;
+   //validation : check if data are provided
+
+   if(!email || !password){
+      return response.json({
+         status:false,
+         message:"Please enter both email and password. ",
+      });
+   } //check user in database
+   try{
+      const user = await Users.findOne({
+         where:{ email, password},
+      });
+      if(user){
+         return response.json({
+            status:true,
+            message:"Login successful. redirecting to dashboard.."
+         });
+      }else{
+            return response.json({
+               status:false,
+               message:"Invalid email or password.",
+         });
+      } 
+   }catch(error){
+      console.log("Login error:", error);
+      return response(500).json({
+         status:false,
+         message:"Internal server error. Please try again later."  }) 
+      }
+    }
+
+
+
+    // adminregister {username, email, password} -> database (postgres)
+const adminregister = async (request,response) => {
+   const {username, email, password} = await request.body
+
+   // validation
+   if(!username || !email || !password){
+     return response.json({
+        message: "please write down all your credientials",
+        status: false,
+     })
+   }
+
+   if(password >= 5){
+     return response.json({
+        message: "Password must be more then 5 character!!",
+        status: false,
+     })
+   }
+
+
+   // data check -> database
+   await Users.create({
+      username,
+      email,
+      password
+   })
+
+   return response.json({
+      status: true,
+      message: "account created successfuly"
+   })
+
+}
+
+
+module.exports = { login, register, getUserById, forgetPassword, resetPassword, adminlogin, adminregister };
+
+    
+    
+
+
+
+
+

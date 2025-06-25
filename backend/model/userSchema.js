@@ -22,6 +22,11 @@ const Users = sequalize.define("users", {
     password: {
         type: DataTypes.STRING,
         allownull: false,
+    },
+    forgotPasswordCode: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+        //code : 1232143
     }
 })
 
