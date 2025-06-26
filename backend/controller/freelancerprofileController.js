@@ -115,3 +115,25 @@ const updateFreelancerProfileHandler = async (request, response) => {
 };
 
 
+//get all freelancer profiles
+const getAllFreelancerProfiles = async (request, response) => {
+  try {
+    const allprofile = await Freelancer_Profile.findAll();
+
+    return response.json({
+      message: "All fetched",
+      data: allprofile,
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,
+
+      status: false,
+    });
+  }
+};
+
+module.exports = {freelancerProfileHandler,deleteFreelancerProfileHandler, updateFreelancerProfileHandler,getAllFreelancerProfiles } 
+
+
