@@ -101,14 +101,25 @@ const updateAdminSettingsHandler = async (request, response) =>{
     }
 };
 
+//get all adminSettings
 
+const getAllAdminSettings = async (request, response) =>{
+    try{
+        const allprofile = await adminSettings.findAll();
+    
+        return response.json({
+            message:"All fetched",
+            data:allprofile,
+            status:true,
+        });
+    } catch (error) {
+        return response.json({
+            message:error,
+            status:false,
+        });
+    }
+};
 
-
-
-
-
-
-
-
+module.exports={createWebsite_Basic_Details, deleteadminsettingsHandler, updateAdminSettingsHandler, getAllAdminSettings}
 
 
