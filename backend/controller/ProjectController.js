@@ -1,4 +1,6 @@
-const {Project} = require("../model/projectSchema")
+const { request, response } = require("express");
+const {Project} = require("../model/projectSchema");
+const { where } = require("sequelize");
 
 const createProject = async (request, response) => {
   const {
@@ -59,3 +61,88 @@ const createProject = async (request, response) => {
     })
 }
 };
+
+
+
+// delete
+
+const deleteProjectHandler = async (request, response) => {
+const { id } = request.params;
+
+if(typeof id !== "number"){
+  return response.json({
+    message:"Please give me your valid id",
+    status:false,
+  });
+} 
+
+try{
+  await Project.destory({
+    where:{
+      id:id,
+    },
+  });
+  return response.json({
+    message:"Sucessfully deleted",
+    status:false,
+  });
+}catch (error) {
+  return response.json({
+    message: error,
+    status:false,
+  });
+}
+}
+
+//update 
+const updateProjectHandler = async (request, response) =>{
+  const { id } = request.params;
+  const data = request.body;
+
+  if(typeof id !== "number"){
+    return response.json({
+      message:"Please give me your valid id",
+      status: false,
+    });
+  }
+  try {
+    await Project.update(data, {
+      where: {
+        id:id
+      }
+    }); 
+    return response.json({
+      message: "Sucessfully updated project ",
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,
+      status: false,
+    });
+  }
+};
+
+
+// //get all project
+const getAllProject = async (request, response) => {
+  try {
+    const allprojectdata = await Project.findAll();
+
+    return response.json({
+      message: "All fetched",
+      data: allprofile,
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,
+
+      status: false,
+    });
+  }
+};
+
+module.exports = {createProject,deleteProjectHandler, updateProjectHandler,getAllProject } 
+
+
