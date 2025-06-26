@@ -44,7 +44,7 @@ const freelancerProfileHandler = async (request, response) => {
   }
 };
 
-// delete
+// delete 
 const deleteFreelancerProfileHandler = async (request, response) => {
   const { id } = request.params;
 
@@ -74,63 +74,3 @@ const deleteFreelancerProfileHandler = async (request, response) => {
   }
 };
 
-// update
-const updateFreelancerProfileHandler = async (request, response) => {
-  const { id } = request.params;
-  const data = request.body;
-
-  if (typeof id !== "number") {
-    return response.json({
-      message: "Please give me your valid id",
-      status: false,
-    });
-  }
-
-  if (!data) {
-    return response.json({
-      message: "Please write down your all data",
-      status: false,
-    });
-  }
-
-  try {
-    await Freelancer_Profile.update(data, {
-      where: {
-        id: id,
-      },
-    });
-
-    // update(data, where id: id)
-
-    return response.json({
-      message: "Sucessfully updated profile ",
-      status: true,
-    });
-  } catch (error) {
-    return response.json({
-      message: error,
-      status: false,
-    });
-  }
-};
-
-//get all freelancer profiles
-const getAllFreelancerProfiles = async (request, response) => {
-  try {
-    const allprofile = await Freelancer_Profile.findAll();
-
-    return response.json({
-      message: "All fetched",
-      data: allprofile,
-      status: true,
-    });
-  } catch (error) {
-    return response.json({
-      message: error,
-
-      status: false,
-    });
-  }
-};
-
-module.exports = {freelancerProfileHandler,deleteFreelancerProfileHandler, updateFreelancerProfileHandler,getAllFreelancerProfiles }
