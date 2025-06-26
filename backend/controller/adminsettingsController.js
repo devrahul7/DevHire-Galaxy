@@ -1,4 +1,4 @@
-const { response } = require("express");
+const { response, request } = require("express");
 const {website_Basic_Details} =require("../model/adminsettingsSchema");
 const { freelancerProfileHandler } = require("./freelancerprofileController");
 const { json } = require("sequelize");
@@ -64,5 +64,51 @@ try{
     })
 }
 };
+
+//update
+const updateAdminSettingsHandler = async (request, response) =>{
+    const { id } = request.params;
+    const data  = request.body;
+
+    if(typeof id !== "number"){
+        return response.json({
+            message:"Please give me your valid id",
+            status:false,
+        });
+    }
+    if(!data){
+        return response.json({
+            message:"Please give me your valid id",
+            status:false,
+        });
+    }
+    try {
+        await adminSettings.update(data, {
+            where:{
+                id:id,
+            },
+        });
+
+        return response.json({
+            message:"Sucessfully updated profile",
+            status:true,
+        });
+    } catch (error){
+        return response.json({
+            message:error,
+            status:false,
+        });
+    }
+};
+
+
+
+
+
+
+
+
+
+
 
 
