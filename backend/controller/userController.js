@@ -303,7 +303,7 @@ const adminregister = async (request,response) => {
    // data check -> database
    await Users.create({
       username,
-      email,
+email,
       password
    })
 

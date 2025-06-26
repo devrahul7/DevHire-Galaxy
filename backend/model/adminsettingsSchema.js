@@ -11,8 +11,7 @@ const Website_basic_details = sequalize.define('website_basic_details',{
             type:DataTypes.STRING,
             allowNull:false,
         }
-    
-});
+    });
 
 const sync = async()=>{
     try{

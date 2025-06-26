@@ -8,8 +8,7 @@ const createReviews = async(request,response) =>{
         rating,
         message
     } = request.body;
-
-    //validation all data
+//validation all data
     if(
         !images||
         !username||

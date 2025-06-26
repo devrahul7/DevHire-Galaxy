@@ -50,7 +50,7 @@ const sync = async()=>{
 
 sync();
 
-module.exports= {Freelancer_Profile};
+module.exports= {};
 
 
 

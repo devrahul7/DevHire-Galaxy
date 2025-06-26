@@ -1,4 +1,7 @@
+const { response } = require("express");
 const {website_Basic_Details} =require("../model/adminsettingsSchema");
+const { freelancerProfileHandler } = require("./freelancerprofileController");
+const { json } = require("sequelize");
 
 const createWebsite_Basic_Details = async(request, response)=>{
     const {
@@ -30,4 +33,36 @@ const createWebsite_Basic_Details = async(request, response)=>{
         
     }
 };
+
+//delete
+const deleteadminsettingsHandler = async (request, response) => {
+const {id} = request.params;
+
+if(typeof id !== "number"){
+    return response.json({
+        message:"Please give me your valid id",
+        status:false,
+    });
+}
+
+try{
+    await adminSettings.destory({
+
+        where:{
+            id:id,
+        },
+    });
+
+    return response.json({
+        message:"Sucessfully delete adminSettings",
+        status:true,
+    });
+}catch (error){
+    return response,json({
+        message:error,
+        status:false,
+    })
+}
+};
+
 

@@ -15,7 +15,6 @@ app.post("/resetPassword",resetPassword);
 app.post("/adminlogin",adminlogin)
 app.post("/adminregister",adminregister)
 
-
 app.listen(PORT, () => {
   console.log(`Server ruuning port ${PORT}`);
 });

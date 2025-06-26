@@ -24,8 +24,7 @@ const showtransition = async(request, response) => {
     }
 
     try {
-        await Transation.create({
-            type:type,
+        await Transation.create({type:type,
             paymentType:paymentType,
             Amount:amount,
             Fees:fees,
