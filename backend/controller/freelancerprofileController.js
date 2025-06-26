@@ -74,3 +74,44 @@ const deleteFreelancerProfileHandler = async (request, response) => {
   }
 };
 
+// update
+const updateFreelancerProfileHandler = async (request, response) => {
+  const { id } = request.params;
+  const data = request.body;
+
+  if (typeof id !== "number") {
+    return response.json({
+      message: "Please give me your valid id",
+      status: false,
+    });
+  }
+
+  if (!data) {
+    return response.json({
+      message: "Please write down your all data",
+      status: false,
+    });
+  }
+
+  try {
+    await Freelancer_Profile.update(data, {
+      where: {
+        id: id,
+      },
+    });
+
+    // update(data, where id: id)
+
+    return response.json({
+      message: "Sucessfully updated profile ",
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,
+      status: false,
+    });
+  }
+};
+
+
