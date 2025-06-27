@@ -1,6 +1,7 @@
 const { request, response } = require("express");
 const {Profile} = require("../model/user_profileSchema");
 const { Project } = require("../model/projectSchema");
+const { where } = require("sequelize");
 
 const createProfile = async(request,response) =>{
     const{
@@ -87,6 +88,75 @@ const deleteUser_ProfileHandler = async (request, response) =>{
         });
     }
 };
+
+//update
+const updateUser_ProfileHandler = async (request, response) =>{
+    const { id } = request.params;
+    const data = request.body;
+
+    if(typeof id !== "number"){
+        return response.json({
+            message:"Please give me your valid id",
+            status:false,
+        });
+    }
+
+    if(!data){
+        return response.json({
+            message:"Please write down your all data",
+            status:false,
+        });
+    }
+    try {
+        await User_Profile.update(data, {
+            where:{
+                id:id,
+            },
+        });
+
+        return response.json({
+            message:"Successfully updated user_profile",
+            status:true,
+        });
+
+    }catch (error){
+        return response.json({
+            message:error,
+            status:false,
+        });
+    }
+};
+
+
+
+
+
+
+
+
+// //get all freelancer profiles
+// const getAllFreelancerProfiles = async (request, response) => {
+//   try {
+//     const allprofile = await Freelancer_Profile.findAll();
+
+//     return response.json({
+//       message: "All fetched",
+//       data: allprofile,
+//       status: true,
+//     });
+//   } catch (error) {
+//     return response.json({
+//       message: error,
+
+//       status: false,
+//     });
+//   }
+// };
+
+// module.exports = {freelancerProfileHandler,deleteFreelancerProfileHandler, updateFreelancerProfileHandler,getAllFreelancerProfiles } 
+
+
+
 
 
 
