@@ -113,9 +113,33 @@ const updateReviesHandler = async (request, response) => {
     }
 }
 
+//get all reviews data
+
+const getAllReviews = async (request, response) => {
+     try {
+    const allprofile = await Reviews.findAll();
+
+    return response.json({
+      message: "All fetched",
+      data: Reviews,
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,
+
+      status: false,
+    });
+  }
+};
+
+module.exports = {createReviews,deleteReviewsHandler, updateReviesHandler,getAllReviews } 
+
+
+
+
+
+
+
 
  
-
-
-
-
