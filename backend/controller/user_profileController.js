@@ -127,6 +127,33 @@ const updateUser_ProfileHandler = async (request, response) =>{
     }
 };
 
+// //get all project
+const getAllUser_Profile = async (request, response) => {
+  try {
+    const alluser_profiledata = await User_Profile.findAll();
+
+    return response.json({
+      message: "All fetched",
+      data: alluser_profile,
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,
+
+      status: false,
+    });
+  }
+};
+
+module.exports = {createProfile,deleteUser_ProfileHandler, updateUser_ProfileHandler,getAllUser_Profile } 
+
+
+
+
+
+
+
 
 
 
