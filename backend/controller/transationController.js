@@ -73,3 +73,35 @@ try{
   });
 }
 }
+
+
+//update 
+const updateTransationHandler = async (request, response) =>{
+  const { id } = request.params;
+  const data = request.body;
+
+  if(typeof id !== "number"){
+    return response.json({
+      message:"Please give me your valid id",
+      status: false,
+    });
+  }
+  try {
+    await Project.update(data, {
+      where: {
+        id:id
+      }
+    }); 
+    return response.json({
+      message: "Sucessfully updated transation data ",
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,
+      status: false,
+    });
+  }
+};
+
+
