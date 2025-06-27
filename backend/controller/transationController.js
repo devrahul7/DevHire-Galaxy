@@ -44,4 +44,32 @@ const showtransition = async(request, response) => {
     }
 };
 
+// delete
 
+const deleteTransationHandler = async (request, response) => {
+const { id } = request.params;
+
+if(typeof id !== "number"){
+  return response.json({
+    message:"Please give me your valid id",
+    status:false,
+  });
+} 
+
+try{
+  await Transation.destory({
+    where:{
+      id:id,
+    },
+  });
+  return response.json({
+    message:"Sucessfully deleted transation",
+    status:false,
+  });
+}catch (error) {
+  return response.json({
+    message: error,
+    status:false,
+  });
+}
+}
