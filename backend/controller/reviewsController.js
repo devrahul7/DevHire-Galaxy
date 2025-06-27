@@ -1,6 +1,8 @@
 
 
+const { request, response } = require("express");
 const {Reviews} = require("./model/reviewsSchema");
+const { where } = require("sequelize");
 const createReviews = async(request,response) =>{
     const {
         images,
@@ -39,3 +41,37 @@ const createReviews = async(request,response) =>{
         })
     }
 }
+
+
+//delete
+
+const deleteReviewsHandler = async (request, response) => {
+    const { id } = request.params;
+
+    if(typeof id !== "number"){
+        return response.json({
+            message:"Please give me your valid id",
+            status:false,
+        });
+    }
+
+    try{
+        await Reviews.destroy({
+            where: {
+                id:id,
+            },
+        });
+
+        return response.json({
+            message:"Sucessfully delete reviews data",
+            status:true,
+        });
+    } catch (error){
+        return response.json({
+            message:error,
+            status:false,
+
+        });
+    }
+};
+
