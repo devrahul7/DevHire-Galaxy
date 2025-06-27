@@ -104,4 +104,28 @@ const updateTransationHandler = async (request, response) =>{
   }
 };
 
+// //get all project
+const getAllTransation = async (request, response) => {
+  try {
+    const alltransationdata = await Transation.findAll();
+
+    return response.json({
+      message: "All fetched",
+      data: allprofile,
+      status: true,
+    });
+  } catch (error) {
+    return response.json({
+      message: error,    
+
+      status: false,
+    });
+  }
+};
+
+module.exports = {showtransition,deleteTransationHandler, updateTransationHandler,getAllTransation } 
+
+
+
+
 
