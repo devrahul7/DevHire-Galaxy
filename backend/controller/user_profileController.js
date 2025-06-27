@@ -1,4 +1,4 @@
-const { request } = require("express");
+const { request, response } = require("express");
 const {Profile} = require("../model/user_profileSchema");
 const { Project } = require("../model/projectSchema");
 
@@ -57,5 +57,37 @@ const createProfile = async(request,response) =>{
     }
 
 };
+
+//delete
+const deleteUser_ProfileHandler = async (request, response) =>{
+    const { id } = request.params;
+
+    if(typeof id !== "number"){
+        return response.json({
+            message:"Please give me your valid id",
+            status:false,
+        });
+    }
+
+    try{
+        await deleteUser_ProfileHandler.destory({
+            where:{
+                id:id,
+            },
+        });
+
+        return response.json({
+            message:"Sucessfully delete user_profile",
+            status:true,
+        });
+    } catch (error) {
+        return response.json({
+            message:error,
+            status:false,
+        });
+    }
+};
+
+
 
 
