@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logoImage from '../assets/logo.png';
 import '../cssfolder/Register.css'; // Import the CSS f
 
-export default function RegistrationForm() {
+export default function Register() {
   const [userType, setUserType] = useState('Freelancer');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -234,3 +234,4 @@ export default function RegistrationForm() {
     </div>
   );
 }
+
