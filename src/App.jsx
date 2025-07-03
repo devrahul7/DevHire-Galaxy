@@ -26,11 +26,13 @@ import Developerprojects from './pages/Developerdashboard/Developerprojects.jsx'
 import Developerpayment from './pages/Developerdashboard/Developerpayment.jsx';
 import Login from './pages/Login.jsx';
 import Register from'./pages/Register.jsx';
+import Homepage from './pages/Homepage.jsx';
 
 export default function App() {
   return (
     <Router>
       <Routes>
+        <Route path ='/' element={<Homepage/>}/>
         <Route path ='/login' element={<Login/ >}/>
         <Route path ='/register' element={<Register/ >}/>
         <Route path='userhiredev' element={<Userhiredev />} />
