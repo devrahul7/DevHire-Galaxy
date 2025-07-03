@@ -86,7 +86,7 @@ const Userdashboard = () => {
     }
   ];
 
-  const StatCard = ({ icon: Icon, title, value, viewDetails, bgColor, iconColor }) => (
+  const StatCard = ({ title, value, viewDetails, bgColor }) => (
     <div style={{
       backgroundColor: 'white',
       borderRadius: '8px',
@@ -103,13 +103,6 @@ const Userdashboard = () => {
                            bgColor === 'bg-green-50' ? '#f0fdf4' : 
                            bgColor === 'bg-yellow-50' ? '#fffbeb' : '#fef2f2'
           }}>
-            <Icon style={{ 
-              width: '24px', 
-              height: '24px', 
-              color: iconColor === 'text-blue-500' ? '#3b82f6' : 
-                     iconColor === 'text-green-500' ? '#10b981' : 
-                     iconColor === 'text-yellow-500' ? '#f59e0b' : '#ef4444'
-            }} />
           </div>
           <div>
             <p style={{ fontSize: '14px', color: '#6b7280', margin: '0 0 4px 0' }}>{title}</p>
@@ -129,7 +122,7 @@ const Userdashboard = () => {
     </div>
   );
 
-  const SidebarItem = ({ icon: Icon, label, hasChevron = false, isActive = false }) => (
+  const SidebarItem = ({ label, hasChevron = false, isActive = false }) => (
     <div style={{
       display: 'flex',
       alignItems: 'center',
@@ -142,7 +135,6 @@ const Userdashboard = () => {
       marginBottom: '4px'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        <Icon style={{ width: '20px', height: '20px' }} />
         <span style={{ fontSize: '14px', fontWeight: '500' }}>{label}</span>
       </div>
       {hasChevron && <ChevronRight style={{ width: '16px', height: '16px' }} />}
@@ -527,8 +519,8 @@ const Userdashboard = () => {
                   </tr>
                 </thead>
                 <tbody style={{ backgroundColor: 'white' }}>
-                  {recentEarnings.map((earning, index) => (
-                    <tr key={index} style={{ borderBottom: '1px solid #e5e7eb' }}>
+                  {recentEarnings.map((earning) => (
+                    <tr key={earning.details} style={{ borderBottom: '1px solid #e5e7eb' }}>
                       <td style={{
                         padding: '16px 24px',
                         fontSize: '14px',
