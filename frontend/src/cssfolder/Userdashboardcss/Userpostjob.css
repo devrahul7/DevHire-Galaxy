@@ -1,0 +1,354 @@
+
+
+ .pcf-form * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .pcf-form {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .pcf-container {
+            max-width: 1700px;
+            margin-left: 13% !important;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pcf-section {
+            margin-bottom: 2rem;
+        }
+
+        .pcf-section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .pcf-form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .pcf-form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .pcf-form-row-two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .pcf-label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+
+        .pcf-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: #495057;
+            background: #ffffff;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .pcf-input:focus {
+            border-color: #fd7e14;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+        }
+
+        .pcf-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: #495057;
+            background: #ffffff;
+            min-height: 100px;
+            resize: vertical;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .pcf-textarea:focus {
+            border-color: #fd7e14;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+        }
+
+        .pcf-select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: #495057;
+            background: #ffffff;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            appearance: none;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .pcf-select:focus {
+            border-color: #fd7e14;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+        }
+
+        .pcf-date-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: #495057;
+            background: #ffffff;
+            position: relative;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .pcf-date-input:focus {
+            border-color: #fd7e14;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+        }
+
+        .pcf-skills-container {
+            position: relative;
+        }
+
+        .pcf-skills-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            color: #495057;
+            background: #ffffff;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .pcf-skills-input:focus {
+            border-color: #fd7e14;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
+        }
+
+        .pcf-skill-tag {
+            display: inline-flex;
+            align-items: center;
+            background: #fd7e14;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pcf-skill-remove {
+            background: none;
+            border: none;
+            color: white;
+            margin-left: 0.5rem;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: bold;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .pcf-skill-remove:hover {
+            opacity: 0.8;
+        }
+
+        .pcf-help-text {
+            font-size: 0.75rem;
+            color: #6c757d;
+            margin-top: 0.5rem;
+        }
+
+        .pcf-budget-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pcf-budget-option {
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: #ffffff;
+        }
+
+        .pcf-budget-option:hover {
+            border-color: #fd7e14;
+            background: #fff8f0;
+        }
+
+        .pcf-budget-option.pcf-selected {
+            border-color: #28a745;
+            background: #f8fff9;
+        }
+
+        .pcf-budget-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8f9fa;
+            color: #6c757d;
+            font-size: 1.5rem;
+        }
+
+        .pcf-budget-option.pcf-selected .pcf-budget-icon {
+            background: #28a745;
+            color: white;
+        }
+
+        .pcf-budget-title {
+            font-weight: 600;
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+
+        .pcf-budget-option.pcf-selected .pcf-budget-title {
+            color: #28a745;
+        }
+
+        .pcf-budget-inputs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .pcf-input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pcf-input-prefix {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+
+        .pcf-input-prefix .pcf-input {
+            padding-left: 2rem;
+        }
+
+        .pcf-prefix-symbol {
+            position: absolute;
+            left: 0.75rem;
+            color: #6c757d;
+            font-weight: 500;
+            z-index: 1;
+        }
+
+        .pcf-section-divider {
+            height: 1px;
+            background: #e9ecef;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .pcf-form {
+                padding: 1rem;
+            }
+
+            .pcf-container {
+                padding: 1rem;
+            }
+
+            .pcf-form-row,
+            .pcf-form-row-two,
+            .pcf-budget-options,
+            .pcf-budget-inputs {
+                grid-template-columns: 1fr;
+            }
+
+            .pcf-section-title {
+                font-size: 1.125rem;
+            }
+        }
+
+        /* Hide real radio buttons and checkboxes */
+        .pcf-budget-option input[type="radio"] {
+            display: none;
+        }
+
+        /* Success checkmark for selected option */
+        .pcf-budget-option.pcf-selected::after {
+            content: '✓';
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            width: 20px;
+            height: 20px;
+            background: #28a745;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        .pcf-budget-option {
+            position: relative;
+        }
+
+
+        .pcf-button {
+    background-color:  #ea580c; /* Standard blue */
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+.pcf-button:hover {
+    background-color:  #a73d05;
+}
+
+.pcf-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(171, 88, 5, 0.25);
+}
