@@ -108,40 +108,7 @@ import AdminSidebar from '../../components/Adminsidebar';
             </div>
 
             {/*  Dashboard Cards  */}
-            <div class="dashboard-cards">
-                <div class="card">
-                    <div class="card-header">
-                        <div>
-                            <div class="card-title">Users</div>
-                            <div class="card-value">1682</div>
-                            <a href="#" class="card-action">view details</a>
-                        </div>
-                        <div class="card-icon users">👥</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div>
-                            <div class="card-title">Completed Projects</div>
-                            <div class="card-value">15k</div>
-                            <a href="#" class="card-action">view details</a>
-                        </div>
-                        <div class="card-icon projects">📋</div>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-header">
-                        <div>
-                            <div class="card-title">Active Projects</div>
-                            <div class="card-value">1568</div>
-                            <a href="#" class="card-action">view details</a>
-                        </div>
-                        <div class="card-icon active">🔄</div>
-                    </div>
-                </div>
-            </div>
+          
 
             {/*  Reviews Section  */}
             <div class="reviews-section">

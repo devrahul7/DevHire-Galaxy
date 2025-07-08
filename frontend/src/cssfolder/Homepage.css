@@ -1,4 +1,4 @@
-     * {
+ * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -62,9 +62,12 @@
             gap: 2.8rem;
             
         }
+        #getperfect{
+     padding-bottom: 3%;
+        }
 
         .btn {
-            
+            margin-top: 4% !important;
             padding: 0.5rem 1.5rem;
             border: none;
             border-radius: 5px;
@@ -85,6 +88,22 @@
         .btn-primary-homepage {
             background: #ff6b35;
             color: white;
+            padding-left: 2%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-left: 26% !important;
+        }
+
+        #getstartednow{
+            background: #ff6b35;
+            color: white;
+            padding-left: 3%;
+            padding-right: 3%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            border-radius: 15%;
+            font-size: larger;
+            margin-left: 1% !important;
         }
 
         .btn:hover {
@@ -95,10 +114,13 @@
         .hero {
             background: linear-gradient(135deg, #ffebe0, #e65729);
             padding: 120px 0 80px;
+            border-radius: 7%;
+            padding-left: 3%;
             /* color: white;
              */                 color: #55392f !important;
 
         }
+
 
         .hero-content {
             display: grid;
@@ -120,6 +142,7 @@
         }
 
         .hero-stats {
+          padding-top: 3%;
             display: flex;
             gap: 2rem;
             margin-top: 2rem;
@@ -141,31 +164,36 @@
 
         .hero-image img {
             max-width: 200%;
-            height: 140%;
-            margin-left: 180% !important;
+            height: 150%;
+            margin-left: 270% !important;
             border-radius: 10px;
         }
 
         /* Projects Section */
         .section {
-            padding: 80px 0;
+            padding: 50px 0;
+            max-width: 100%;
         }
 
         .section-header {
             text-align: center;
             margin-bottom: 3rem;
+            
         }
 
         .section-title {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            /* margin-bottom: 2rem; */
+            padding-bottom: 3%;
+            padding-left: 26%;
             color: #1e3a8a;
         }
 
         .projects-grid {
+          margin-left: 05% !important;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 4rem;
             margin-bottom: 3rem;
         }
 
@@ -285,15 +313,17 @@
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            gap: 1.25rem;
             text-align: center;
+            padding-left: 27%;
+            justify-content: center;
         }
 
         .skill-item {
             padding: 1rem;
-            background: #f8fafc;
-            border-radius: 10px;
-            transition: background 0.3s;
+            background: #cbcac9;
+            border-radius: 15px;
+            transition: background 0.5s;
         }
 
         .skill-item:hover {
@@ -309,9 +339,20 @@
         }
 
         .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            /* display: grid; */
+
+            /* grid-template-columns: repeat(auto-fit, minmax(15px, 0.14fr)); */
+            display: flex;
+            padding-left: 30%;
+            justify-content: center;
             gap: 2rem;
+        }
+        p{
+          color: #333940;
+          padding-bottom: 4%;
+        }
+        h2{
+          padding-bottom: 2% !important;
         }
 
         .stat-item h3 {
@@ -319,16 +360,20 @@
             margin-bottom: 0.5rem;
             color: #ff6b35;
         }
+        #reviewofusers{
+          padding-left: 12%  ;
+        }
 
         /* Reviews Section */
         .reviews-section {
             background: #f8fafc;
+            padding-left: 7% !important;
         }
 
         .reviews-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            gap: 3rem;
         }
 
         .review-card {

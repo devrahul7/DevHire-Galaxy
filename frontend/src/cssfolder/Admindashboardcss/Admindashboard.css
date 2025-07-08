@@ -115,6 +115,9 @@
             margin-bottom: 30px;
         }
 
+        h1{
+            padding-bottom: 1%;
+        }
         .page-title {
             font-size: 28px;
             font-weight: 600;
@@ -155,6 +158,7 @@
         }
 
         .card-title {
+            padding-bottom: 32%;
             font-size: 14px;
             color: #666;
             font-weight: 500;
@@ -287,11 +291,12 @@
         }
 
         .welcome-avatar {
+            padding-left: 50%;
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            /* background: linear-gradient(135deg, #ff6b35, #f7931e); */
             border-radius: 50%;
-            margin: 0 auto 16px;
+            /* margin: 0 auto 16px; */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -306,6 +311,7 @@
         }
 
         .welcome-user {
+            padding-bottom: 3%;
             font-size: 18px;
             font-weight: 600;
             color: #ff6b35;
@@ -378,6 +384,7 @@
         }
 
         .reviews-title {
+            margin-bottom: 0%;
             font-size: 18px;
             font-weight: 600;
             color: #333;
@@ -413,7 +420,11 @@
             align-items: center;
         }
 
+        h2{
+            padding-bottom: 1%;
+        }
         .entries-control {
+            padding-top: 1%;
             display: flex;
             align-items: center;
             gap: 8px;

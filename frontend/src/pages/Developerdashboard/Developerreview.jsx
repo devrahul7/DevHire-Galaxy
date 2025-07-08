@@ -12,7 +12,7 @@ export default function Developerreview(){
     
     <div>
         <Developersidebar/>
-    <div class="reviews-container-unique">
+    <div class="reviews-container-unique" >
         <h2 class="reviews-title-unique">Reviews</h2>
         
         <div class="review-card-unique">

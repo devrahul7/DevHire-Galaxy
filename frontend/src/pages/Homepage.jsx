@@ -6,6 +6,8 @@ import jamesImage from '../assets/james.avif';
 import timothyImage from '../assets/timothy.jpeg';
 import janetImage from '../assets/janet.avif';
 import floydImage from '../assets/floyd.avif';
+import Footer from '../components/Homepagecomponents/Footer';
+import Navbar from '../components/Homepagecomponents/Navbar';
  
 
 export default function Homepage() {
@@ -75,29 +77,16 @@ export default function Homepage() {
 
     return (
         <div>
-            {/* Header */}
-            <header className="header-homepage">
-                <div className="container-homepage">
-                    <nav className="nav-homepage">
-                        <div className="logo-homepage">DevHire Galaxy</div>
-                     
-                        <div className="auth-buttons-homepage">
-                            <a className="btn btn-primary-homepage"  onClick={() => navigate('/register')}  >Register</a>
-                            <a  className="btn btn-primary-homepage"   onClick={() => navigate('/login')} >Login</a>
-                            <a  className="btn btn-primary-homepage"    onClick={() => navigate('/login')} >Admin</a>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-
+          
+          <Navbar/>
             {/* Hero Section */}
             <section className="hero" id="home">
                 <div className="container">
                     <div className="hero-content">
                         <div className="hero-text">
-                            <h1>Get the Perfect Developers & Projects</h1>
+                            <h1 id='getperfect'>Get the Perfect Developers & Projects</h1>
                             <p>Connect with top-rated developers worldwide and find the perfect project that matches your skills. Build your career with confidence.</p>
-                            <a href="#" className="btn btn-primary-homepage">Get Started</a>
+                            <a onClick={() => navigate('/login')} id='getstartednow' >Get Started</a>
                             <div className="hero-stats">
                                 <div className="stat">
                                     <span className="stat-number">5K+</span>
@@ -227,61 +216,12 @@ export default function Homepage() {
                         </div>
                     </div>
                     <div  style={{ textAlign: 'center' , marginTop: '1px' }}>
-                        <a href="#" className="btn btn-primary-homepage">View All Projects</a>
+                        <a onClick={() => navigate('/adminprojects')} className="btn btn-primary-homepage">View All Projects</a>
                     </div>
                 </div>
             </section>
 
-            {/* Featured Developer */}
-            <section className="featured-dev">
-                <div className="container">
-                    <div className="featured-content">
-                        <div className="dev-image">
-                            <div className="dev-avatar">Developer Photo</div>
-                                                        {/* <img src={jamesImage} alt="james image"/> */}
-
-                            
-                            <div style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                gap: '0.5rem'
-                            }}>
-                                <div style={{
-                                    background: '#e5e7eb',
-                                    padding: '0.5rem',
-                                    borderRadius: '5px'
-                                }}>Portfolio</div>
-                                <div style={{
-                                    background: '#e5e7eb',
-                                    padding: '0.5rem',
-                                    borderRadius: '5px'
-                                }}>Skills</div>
-                                <div style={{
-                                    background: '#e5e7eb',
-                                    padding: '0.5rem',
-                                    borderRadius: '5px'
-                                }}>Reviews</div>
-                            </div>
-                        </div>
-                        <div className="dev-info">
-                            <h3>Discover Product Around new Location Our Partner</h3>
-                            <p className="dev-description">
-                                Meet our featured developer who specializes in full-stack development with over 5 years of experience. 
-                                They have successfully completed 150+ projects with a 98% client satisfaction rate.
-                            </p>
-                            <div className="dev-skills">
-                                <span className="skill-tag">React</span>
-                                <span className="skill-tag">Node.js</span>
-                                <span className="skill-tag">Python</span>
-                                <span className="skill-tag">AWS</span>
-                                <span className="skill-tag">MongoDB</span>
-                            </div>
-                            <a href="#" className="btn btn-primary-homepage">View Profile</a>
-                            <a href="#" className="btn btn-outline" style={{ marginLeft: '1rem' }}>Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+           
 
             {/* Featured Skills */}
             <section className="section skills-section">
@@ -337,7 +277,7 @@ export default function Homepage() {
             <section className="section reviews-section">
                 <div className="container">
                     <div className="section-header">
-                        <h2 className="section-title">Reviews Of The Users</h2>
+                        <h2   id='reviewofusers' className="section-title">Reviews Of The Users</h2>
                     </div>
                     <div className="reviews-grid">
                         <div className="review-card">
@@ -362,11 +302,27 @@ export default function Homepage() {
                             <div className="stars">★★★★★</div>
                             <p>"Great experience working with developers from DevHire. Professional, timely, and excellent communication throughout."</p>
                         </div>
+
+ <div className="review-card">
+                            <div className="review-header">
+                                <div className="reviewer-avatar">SM</div>
+                                <div>
+                                    <h4>Sarah Mitchell</h4>
+                                    <p>Startup Founder</p>
+                                </div>
+                            </div>
+                            <div className="stars">★★★★★</div>
+                            <p>"Great experience working with developers from DevHire. Professional, timely, and excellent communication throughout."</p>
+                        </div>
+
+                        
+
+
                         <div className="review-card">
                             <div className="review-header">
                                 <div className="reviewer-avatar">MJ</div>
                                 <div>
-                                    <h4>Mike Johnson</h4>
+                                    <h4>Sita Mahalaxmi</h4>
                                     <p>Product Manager</p>
                                 </div>
                             </div>
@@ -376,57 +332,7 @@ export default function Homepage() {
                     </div>
                 </div>
             </section>
-
-            {/* Footer */}
-            <footer className="footer">
-                <div className="container">
-                    <div className="footer-content">
-                        <div className="footer-section">
-                            <h4>DevHire</h4>
-                            <p>Connect with top developers worldwide and build amazing projects together.</p>
-                        </div>
-                        <div className="footer-section">
-                            <h4>For Clients</h4>
-                            <ul>
-                                <li><a href="#">How to Hire</a></li>
-                                <li><a href="#">Talent Marketplace</a></li>
-                                <li><a href="#">Project Catalog</a></li>
-                                <li><a href="#">Enterprise</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-section">
-                            <h4>For Developers</h4>
-                            <ul>
-                                <li><a href="#">How to Find Work</a></li>
-                                <li><a href="#">Direct Contracts</a></li>
-                                <li><a href="#">Find Jobs</a></li>
-                                <li><a href="#">Success Stories</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-section">
-                            <h4>Resources</h4>
-                            <ul>
-                                <li><a href="#">Help Center</a></li>
-                                <li><a href="#">Success Stories</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Community</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-section">
-                            <h4>Company</h4>
-                            <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Leadership</a></li>
-                                <li><a href="#">Careers</a></li>
-                                <li><a href="#">Press</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="footer-bottom">
-                        <p>&copy; 2024 DevHire. All rights reserved. | Privacy Policy | Terms of Service</p>
-                    </div>
-                </div>
-            </footer>
+ <Footer/>
         </div>
     );
 }

@@ -127,10 +127,7 @@ const Adminreports = () => {
             </div>
             <div className={styles.tableControls}>
                 <div className={styles.entriesSelector}>
-                    <select className={styles.entriesSelect}>
-                        <option>10</option> <option>25</option> <option>50</option>
-                    </select>
-                    <span>entries per page</span>
+           
                 </div>
                 <div className={styles.searchBox}>
                     <label>Search:</label>

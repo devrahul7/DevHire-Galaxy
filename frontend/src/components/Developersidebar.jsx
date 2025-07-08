@@ -11,8 +11,8 @@ export default function Developersidebar(){
                     <div className="developer-profile">
                         <div className="developer-profile-avatar">BB</div>
                         <div className="developer-profile-info">
-                            <h3>Bruce Bush <span className="developer-profile-status"></span></h3>
-                            <p className="developer-profile-username">@brucebush</p>
+                            <h3>Dev Shukra <span className="developer-profile-status"></span></h3>
+                            <p className="developer-profile-username">@devshukra123@gmail.com</p>
                         </div>
                     </div>
 
