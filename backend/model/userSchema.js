@@ -8,7 +8,7 @@ const Users = sequalize.define("users", {
         primaryKey: true,
         autoIncrement: true
     },
-
+ 
     username: {
         type: DataTypes.STRING,
         allownull: false,
@@ -26,7 +26,7 @@ const Users = sequalize.define("users", {
     forgotPasswordCode: {
         type: DataTypes.INTEGER,
         allowNull: true
-        //code : 1232143
+        
     }
 })
 

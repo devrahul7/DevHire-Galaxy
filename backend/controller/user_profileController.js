@@ -1,9 +1,8 @@
 const { request, response } = require("express");
 const {Profile} = require("../model/user_profileSchema");
-const { Project } = require("../model/projectSchema");
-const { where } = require("sequelize");
+const { json } = require("sequelize");
 
-const createProfile = async(request,response) =>{
+const createProfile =  async(request,response) =>{
     const{
         first_Name,
         last_Name,
@@ -137,7 +136,7 @@ const getAllUser_Profile = async (request, response) => {
       data: alluser_profile,
       status: true,
     });
-  } catch (error) {
+  } catch (error) { 
     return response.json({
       message: error,
 

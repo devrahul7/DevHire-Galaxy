@@ -1,4 +1,5 @@
-const {sequalize, DataTypes} = require("sequelize");
+const {DataTypes} = require("sequelize");
+const {sequalize} = require("../database/db.js")
 
 
 const Website_basic_details = sequalize.define('website_basic_details',{

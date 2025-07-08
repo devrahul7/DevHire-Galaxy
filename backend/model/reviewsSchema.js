@@ -1,15 +1,17 @@
 
-const {sequalize, DataTypes}= require("sequelize")
+const { DataTypes}= require("sequelize")
+const {sequalize} = require("../database/db.js")
 
 const Reviews = sequalize.define('reviews',{
 
 
- id:{
-    type:DataTypes.STRING,
-    allowNull:false,
-    primaryKey:true,
-    autoIncrement:true,
- },
+ id: {
+  type: DataTypes.INTEGER,
+  allowNull: false,
+  autoIncrement: true,
+  primaryKey: true
+},
+
  images:{
     type:DataTypes.STRING,
     allowNull:false,
@@ -18,10 +20,10 @@ const Reviews = sequalize.define('reviews',{
     type:DataTypes.STRING,
     allowNull:false,
  },
- rating:{
-    type:DataTypes.NUMBER,
-    allowNull:false,
- },
+ rating: {
+  type: DataTypes.INTEGER, 
+},
+
  message:{
     type:DataTypes.STRING,
     allowNull:false,

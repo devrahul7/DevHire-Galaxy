@@ -1,6 +1,6 @@
 const { response, request } = require("express");
 const {website_Basic_Details} =require("../model/adminsettingsSchema");
-const { freelancerProfileHandler } = require("./freelancerprofileController");
+
 const { json } = require("sequelize");
 
 const createWebsite_Basic_Details = async(request, response)=>{
@@ -19,7 +19,7 @@ const createWebsite_Basic_Details = async(request, response)=>{
         });
     }
     try {
-        await Project.createWebsite_Basic_Details({
+        await website_Basic_Details.create({
             websiteName:website_Name,
                logo:logo
         })
@@ -46,7 +46,7 @@ if(typeof id !== "number"){
 }
 
 try{
-    await adminSettings.destory({
+    await website_Basic_Details.destory({
 
         where:{
             id:id,
@@ -83,7 +83,7 @@ const updateAdminSettingsHandler = async (request, response) =>{
         });
     }
     try {
-        await adminSettings.update(data, {
+        await website_Basic_Details.update(data, {
             where:{
                 id:id,
             },
@@ -105,7 +105,7 @@ const updateAdminSettingsHandler = async (request, response) =>{
 
 const getAllAdminSettings = async (request, response) =>{
     try{
-        const allprofile = await adminSettings.findAll();
+        const allprofile = await website_Basic_Details.findAll();
     
         return response.json({
             message:"All fetched",

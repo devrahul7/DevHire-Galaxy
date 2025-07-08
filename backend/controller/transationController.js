@@ -1,5 +1,7 @@
 const { request, response } = require("express")
-const {Transation} = require("../controller/model/transationSchema")
+const { Transation } = require("../model/transationSchema.js"); 
+const { json } = require("sequelize");
+
 const showtransition = async(request, response) => {
     const {
         type,

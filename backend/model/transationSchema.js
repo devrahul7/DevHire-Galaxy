@@ -1,7 +1,6 @@
-const { Sequelize,DataTypes } = require("sequelize");
-const Transation = sequalize.define('transation',{
-
-
+const { DataTypes } = require("sequelize");
+const {sequalize} = require("../database/db.js");
+const Transation = sequalize.define('Transation',{
 
 id:{
     type:DataTypes.STRING,

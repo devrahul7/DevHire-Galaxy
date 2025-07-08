@@ -1,8 +1,9 @@
-const {sequalize, DataTypes} = require("sequelize")
+const { DataTypes} = require('sequelize')
+const {sequalize} = require("../database/db.js")
 
 const Project = sequalize.define('project', {
     id: {
-        type: DataTypes.STRING,
+        type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
@@ -10,13 +11,10 @@ const Project = sequalize.define('project', {
     title: {
         type:DataTypes.STRING,
         allowNull:false,
-
-
     },
     category:{
        type:DataTypes.STRING,
        allowNull:false, 
-
     },
     duration:{
         type:DataTypes.TIME,
@@ -25,14 +23,10 @@ const Project = sequalize.define('project', {
 Deadline_date:{
     type:DataTypes.DATE,
     allowNull:false,
-
-
 },
 freelancer_type:{
     type:DataTypes.STRING,
     allowNull:false,
-
-
 },
 freelancer_level:{
     type:DataTypes.STRING,
@@ -45,7 +39,7 @@ tags:{
 
 },
 skills:{
-    type:DataTypes.ARRAY,
+    type:DataTypes.ARRAY(DataTypes.STRING),
     allowNull:false,
 
 },
@@ -64,8 +58,6 @@ const sync = async()=>{
     } catch (error) {
         console.log("error",error);
     }
-  
-
 }
 
 sync();

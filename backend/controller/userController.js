@@ -4,8 +4,8 @@ const {Users} = require("../model/userSchema");
 
 // register {username, email, password} -> database (postgres)
 const register = async (request,response) => {
-   const {username, email, password} = await request.body
-
+   const {username, email, password} = request.body
+ 
    // validation
    if(!username || !email || !password){
      return response.json({
@@ -13,8 +13,8 @@ const register = async (request,response) => {
         status: false,
      })
    }
-
-   if(password >= 5){
+ 
+   if(password.length <= 5){
      return response.json({
         message: "Password must be more then 5 character!!",
         status: false,
@@ -28,6 +28,8 @@ const register = async (request,response) => {
       email,
       password
    })
+
+
 
    return response.json({
       status: true,
@@ -54,7 +56,7 @@ if(!email || !password){
    });
 }
 
-
+  
 //check user in database
 try{
 const user = await Users.findOne({

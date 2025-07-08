@@ -1,7 +1,9 @@
+const { response, request } = require("express");
 const { Freelancer_Profile } = require("../model/freelancerprofileSchema");
-
+   
+const { json } = require("sequelize");
 // create
-const freelancerProfileHandler = async (request, response) => {
+const createfreelancerProfileHandler = async (request, response) => {
   const { name, experties, description, experience, budget, location, skills } =
     request.body;
 
@@ -134,6 +136,6 @@ const getAllFreelancerProfiles = async (request, response) => {
   }
 };
 
-module.exports = {freelancerProfileHandler,deleteFreelancerProfileHandler, updateFreelancerProfileHandler,getAllFreelancerProfiles } 
+module.exports = {createfreelancerProfileHandler,deleteFreelancerProfileHandler, updateFreelancerProfileHandler,getAllFreelancerProfiles } 
 
 

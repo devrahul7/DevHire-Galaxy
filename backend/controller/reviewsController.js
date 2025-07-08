@@ -1,8 +1,8 @@
 
 
 const { request, response } = require("express");
-const {Reviews} = require("./model/reviewsSchema");
-const { where } = require("sequelize");
+const {Reviews} = require("../model/reviewsSchema.js");
+const { json } = require("sequelize");
 const createReviews = async(request,response) =>{
     const {
         images,
