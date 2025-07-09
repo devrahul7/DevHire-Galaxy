@@ -19,10 +19,10 @@ const LoginNavbar = ({ isMenuOpen, setIsMenuOpen }) => {
           
           <div className="hidden md:flex items-center space-x-8">
       
-            <button onClick={() => navigate('/login/userlogin')} className="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors">
+            <button onClick={() => navigate('/login')} className="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors">
              Login
             </button>
-            <button className="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors">
+            <button  onClick={() => navigate('/register')} className="bg-orange-600 text-white px-6 py-2 rounded-full hover:bg-orange-700 transition-colors">
               Register
             </button>
           </div>

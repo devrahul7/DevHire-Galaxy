@@ -1,7 +1,9 @@
 import React from 'react';
 import { Zap, Users } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const HeroSection = () => {
+    const navigate = useNavigate();
   return (
     <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-orange-50 to-red-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,10 +17,10 @@ const HeroSection = () => {
             we help you build the perfect team for your next project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-orange-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-700 transition-all transform hover:scale-105">
+            <button onClick={() => navigate('/login')} className="border-2 border-orange-600 text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 hover:text-white transition-all">
               Hire Developers
             </button>
-            <button className="border-2 border-orange-600 text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 hover:text-white transition-all">
+            <button onClick={() => navigate('/developerlogin')} className="border-2 border-orange-600 text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-600 hover:text-white transition-all">
               Join as Developer
             </button>
           </div>
