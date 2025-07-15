@@ -218,17 +218,8 @@ const SettingsContent = () => {
         </div>
         <div className="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center space-x-4">
-            <div className="w-16 h-16 bg-[#d97757] rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">
-                {profileData.firstName ? profileData.firstName.charAt(0).toUpperCase() : 'A'}
-              </span>
-            </div>
-            <div>
-              <button className="bg-[#d97757] text-white px-4 py-2 rounded-lg hover:bg-[#c86a4a] transition-colors">
-                Change Avatar
-              </button>
-              <p className="text-xs text-gray-500 mt-1">JPG, PNG or GIF (max 2MB)</p>
-            </div>
+            
+           
           </div>
           <button 
             onClick={handleSaveSettings}
