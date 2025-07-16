@@ -2,6 +2,7 @@ import { User, Job, JobRequest, Project, Payment, Notification, Review } from '.
 import { validationResult } from 'express-validator';
 import { Op } from 'sequelize';
 
+
 export const getDashboard = async (req, res) => {
   try {
     const userId = req.user.id;

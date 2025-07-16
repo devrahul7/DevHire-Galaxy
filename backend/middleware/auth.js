@@ -1,7 +1,9 @@
 import jwt from 'jsonwebtoken';
 import { User } from '../models/index.js';
 
+
 const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key';
+
 
 export const authenticateToken = async (req, res, next) => {
   try {
@@ -16,6 +18,9 @@ export const authenticateToken = async (req, res, next) => {
     const user = await User.findByPk(decoded.userId, {
       attributes: { exclude: ['password'] }
     });
+
+
+
 
     if (!user) {
       return res.status(401).json({ message: 'Invalid token' });

@@ -76,7 +76,7 @@ router.delete('/notifications/:id', deleteNotification);
 
 router.get('/profile', authenticateToken, authorizeRoles('developer'), getProfile);
 
-router.put('/profile', authenticateToken, authorizeRoles('developer'), [
+ router.put('/profile', authenticateToken, authorizeRoles('developer'), [
   body('name').optional().notEmpty().withMessage('Name cannot be empty'),
   body('phone').optional().isMobilePhone().withMessage('Invalid phone number'),
   body('hourlyRate').optional().isFloat({ min: 0 }).withMessage('Hourly rate must be a positive number')
