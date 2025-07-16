@@ -430,34 +430,7 @@ const Profile = () => {
         </div>
       </div>
 
-      {/* Security Settings */}
-      <div className="bg-white rounded-lg shadow-lg">
-        <div className="p-6">
-          <h3 className="text-xl font-semibold text-gray-900 mb-8 flex items-center">
-            <svg className="w-6 h-6 mr-3 text-[#d97757]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-            </svg>
-            Security Settings
-          </h3>
-          
-          <div className="space-y-6">
-            <div className="flex items-center justify-between p-6 border border-gray-200 rounded-lg hover:border-[#d97757] transition-all duration-200 hover:shadow-md">
-              <div className="flex items-start">
-                <svg className="w-5 h-5 mr-3 mt-1 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
-                </svg>
-                <div>
-                  <h4 className="font-semibold text-gray-900 mb-1">Change Password</h4>
-                  <p className="text-sm text-gray-600">Update your password to keep your account secure</p>
-                </div>
-              </div>
-              <button className="px-6 py-2 text-sm font-medium text-[#d97757] border border-[#d97757] rounded-lg hover:bg-[#d97757] hover:text-white transition-all duration-200 hover:shadow-md">
-                Change
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+     
     </div>
   );
 };

@@ -19,7 +19,7 @@ const createAdminDirect = async () => {
     const adminUser = await User.create({
       name: 'Admin Account',
       email: 'admin@gmail.com',
-      password: 'admin123',
+      password: 'admin 123',
       role: 'admin',
       status: 'active',
       isVerified: true,
