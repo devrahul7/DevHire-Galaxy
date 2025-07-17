@@ -100,7 +100,7 @@ const UserLoginPage = () => {
             </button>
           </div>
           
-          <div className="flex items-center justify-between">
+          {/* <div className="flex items-center justify-between">
             <div className="flex items-center">
               <input
                 id="remember-me"
@@ -117,7 +117,7 @@ const UserLoginPage = () => {
                 Forgot your password?
               </a>
             </div>
-          </div>
+          </div> */}
           
           <button
             type="submit"
