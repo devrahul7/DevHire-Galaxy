@@ -19,13 +19,7 @@ const FinancialHeader = ({ selectedPeriod, onPeriodChange, onExportReport }) => 
           <option value="quarterly">Quarterly</option>
           <option value="yearly">Yearly</option>
         </select>
-        <button 
-          onClick={onExportReport}
-          className="bg-[#d97757] text-white px-4 py-2 rounded-lg flex items-center space-x-2 hover:bg-[#c86a4a] transition-colors"
-        >
-          <Download className="w-4 h-4" />
-          <span>Export Report</span>
-        </button>
+    
       </div>
     </div>
   );

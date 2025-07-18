@@ -46,7 +46,7 @@ const FinancialCharts = ({ monthlyData, paymentMethods }) => {
               </div>
             ))}
           </div>
-          <div className="flex items-center justify-center space-x-4 mt-4">
+          <div className="flex items-center justify-center space-x-4 mt-1">
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-[#d97757] rounded"></div>
               <span className="text-sm text-gray-600">Revenue</span>

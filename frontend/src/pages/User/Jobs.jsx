@@ -184,10 +184,7 @@ const Jobs = () => {
           <nav className="-mb-px flex space-x-8">
             {[
               { key: 'all', label: 'All Jobs' },
-              { key: 'active', label: 'Active' },
-              { key: 'completed', label: 'Completed' },
-              { key: 'draft', label: 'Draft' },
-              { key: 'cancelled', label: 'Cancelled' }
+              
             ].map((tab) => (
               <button
                 key={tab.key}

@@ -16,7 +16,7 @@ const Sidebar = ({ activeTab, setActiveTab, isOpen, setIsOpen }) => {
   const menuItems = [
     { id: 'dashboard', label: 'Dashboard', icon: FiHome },
     { id: 'job-requests', label: 'Job Requests', icon: FiBriefcase },
-    { id: 'my-jobs', label: 'My Jobs', icon: FiFileText },
+    { id: 'my-jobs', label: 'Jobs', icon: FiFileText },
     { id: 'reviews', label: 'Reviews', icon: FiStar },
     { id: 'profile', label: 'Profile', icon: FiUser },
     { id: 'payments', label: 'Payments', icon: FiDollarSign },
